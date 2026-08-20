@@ -101,14 +101,14 @@ I approach engineering with a **product mindset** — every system I build is me
 
 **Backend & Databases**
 
-<img src="https://skillicons.dev/icons?i=fastapi,flask,mysql,mongodb&theme=dark" alt="backend" />
+<img src="https://skillicons.dev/icons?i=fastapi,flask,express,mysql,mongodb,postgres&theme=dark" alt="backend" />
 <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white&labelColor=0D1117" alt="streamlit" />
 <img src="https://img.shields.io/badge/FAISS-4C1D95?style=for-the-badge&logo=meta&logoColor=white&labelColor=0D1117" alt="faiss" />
 <img src="https://img.shields.io/badge/ChromaDB-7C3AED?style=for-the-badge&labelColor=0D1117" alt="chromadb" />
 
 **Cloud, DevOps & Tooling**
 
-<img src="https://skillicons.dev/icons?i=git,github,docker,linux,vscode,vercel&theme=dark" alt="devops" />
+<img src="https://skillicons.dev/icons?i=git,github,docker,linux,vscode,vercel,npm,postman,azure&theme=dark" alt="devops" />
 <img src="https://img.shields.io/badge/Render-4C1D95?style=for-the-badge&logo=render&logoColor=white&labelColor=0D1117" alt="render" />
 <img src="https://img.shields.io/badge/Gunicorn-499848?style=for-the-badge&logo=gunicorn&logoColor=white&labelColor=0D1117" alt="gunicorn" />
 
