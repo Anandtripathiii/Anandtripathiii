@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="70" viewBox="0 0 1000 70" role="img" aria-label="Commit Snake">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#0A0806"/><stop offset=".5" stop-color="#1a0a08"/><stop offset="1" stop-color="#0A0806"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop offset="0" stop-color="#DC2626" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#DC2626"/>
+      <stop offset="1" stop-color="#F5E6C8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="70" rx="10" fill="url(#bg)"/>
+  <line x1="0" y1="34" x2="400" y2="34" stroke="url(#line)" stroke-width="1"/>
+  <line x1="600" y1="34" x2="1000" y2="34" stroke="url(#line)" stroke-width="1"/>
+  <g transform="translate(500,20)">
+    <text x="0" y="22" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="4" fill="#8a7849">[ 05 ]</text>
+    <text x="0" y="46" text-anchor="middle" font-family="-apple-system, Segoe UI, Helvetica, sans-serif" font-size="22" font-weight="800" letter-spacing="8" fill="#F5E6C8">COMMIT SNAKE</text>
+  </g>
+</svg>

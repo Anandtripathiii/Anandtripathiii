@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="46" viewBox="0 0 150 46" role="img" aria-label="Email anandtripathiiiofficial@gmail.com">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a0a08"/><stop offset="1" stop-color="#0A0806"/>
+    </linearGradient>
+    <linearGradient id="brd" x1="0" x2="1">
+      <stop offset="0" stop-color="#DC2626"/><stop offset="1" stop-color="#F5E6C8"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="148" height="44" rx="12" fill="url(#bg)" stroke="url(#brd)" stroke-width="1.4"/>
+  <g transform="translate(18,15)" fill="none" stroke="#DC2626" stroke-width="1.8" stroke-linejoin="round">
+    <rect x="0" y="0" width="22" height="16" rx="3"/>
+    <path d="M0 2 L11 10 L22 2"/>
+  </g>
+  <text x="48" y="29" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" font-weight="700" letter-spacing="2" fill="#F5E6C8">EMAIL</text>
+</svg>
