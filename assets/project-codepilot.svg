@@ -1,76 +1,68 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="490" height="260" viewBox="0 0 490 260" role="img" aria-label="CodePilot AI — dual-LLM coding assistant with RAG">
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="280" viewBox="0 0 490 280" role="img" aria-label="CodePilot AI">
 <style>
-  .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
-  .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; }
+  .mono { font-family: ui-monospace, Menlo, Consolas, monospace; }
+  .sans { font-family: -apple-system, 'Segoe UI', Helvetica, sans-serif; }
   .blink { animation: blink 1s steps(1) infinite; }
   @keyframes blink { 50% { opacity: 0; } }
   @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
 </style>
 <defs>
-  <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#1a0a08"/><stop offset="1" stop-color="#0A0806"/>
-  </linearGradient>
-  <linearGradient id="brd2" x1="0" x2="1">
-    <stop offset="0" stop-color="#F5E6C8"/><stop offset="1" stop-color="#DC2626"/>
-  </linearGradient>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a0a2e"/><stop offset="1" stop-color="#050308"/></linearGradient>
+  <linearGradient id="brd" x1="0" x2="1"><stop offset="0" stop-color="#E13838"/><stop offset="1" stop-color="#A855F7"/></linearGradient>
 </defs>
+<rect x="1" y="1" width="488" height="278" rx="14" fill="url(#bg)" stroke="url(#brd)" stroke-width="2"/>
 
-<rect x="1" y="1" width="488" height="258" rx="14" fill="url(#bg2)" stroke="url(#brd2)" stroke-width="1.4"/>
-
-<!-- Chip row -->
 <g transform="translate(18,16)">
-  <rect width="130" height="20" rx="6" fill="#991B1B"/>
-  <text x="65" y="14" text-anchor="middle" class="mono" font-size="9" letter-spacing="1.6" fill="#F5E6C8">DUAL-LLM · FAISS</text>
-  <rect x="140" width="120" height="20" rx="6" fill="none" stroke="#8a7849"/>
-  <text x="200" y="14" text-anchor="middle" class="mono" font-size="9" letter-spacing="1.6" fill="#C9B48A">FLASK · RENDER</text>
+  <rect width="12" height="14" fill="#A855F7"/>
+  <text x="22" y="12" class="mono" font-size="10" letter-spacing="3" fill="#C084FC">[ 02 ] · CODEPILOT-AI</text>
+</g>
+<g transform="translate(18,42)">
+  <rect width="130" height="20" rx="4" fill="#991B1B"/>
+  <text x="65" y="14" text-anchor="middle" class="mono" font-size="9" letter-spacing="1.6" fill="#F8FAFC">DUAL-LLM · FAISS</text>
+  <rect x="138" width="120" height="20" rx="4" fill="#1a0a2e" stroke="#4C1D95"/>
+  <text x="198" y="14" text-anchor="middle" class="mono" font-size="9" letter-spacing="1.6" fill="#A855F7">FLASK · RENDER</text>
 </g>
 
-<!-- Title + blurb -->
-<text x="18" y="68" class="sans" font-size="22" font-weight="800" fill="#F5E6C8">CodePilot AI</text>
-<text x="18" y="92" class="sans" font-size="12" fill="#C9B48A">A coding companion that orchestrates two</text>
-<text x="18" y="108" class="sans" font-size="12" fill="#C9B48A">LLMs over your files and live docs.</text>
+<text x="18" y="100" class="sans" font-size="24" font-weight="900" fill="#F8FAFC">CodePilot AI</text>
+<text x="18" y="124" class="sans" font-size="12" fill="#C084FC">A coding companion that orchestrates two</text>
+<text x="18" y="140" class="sans" font-size="12" fill="#C084FC">LLMs over your files and live docs.</text>
 
-<!-- Code-editor visual on right -->
-<g transform="translate(290,54)">
-  <rect x="0" y="0" width="180" height="120" rx="6" fill="#0A0806" stroke="#3f1515"/>
-  <!-- traffic lights -->
-  <circle cx="12" cy="12" r="3" fill="#DC2626"/>
-  <circle cx="22" cy="12" r="3" fill="#E8B06B"/>
-  <circle cx="32" cy="12" r="3" fill="#C9B48A"/>
-  <!-- code lines -->
+<!-- Code editor on right -->
+<g transform="translate(290,52)">
+  <rect x="0" y="0" width="180" height="130" rx="6" fill="#050308" stroke="#4C1D95"/>
+  <circle cx="12" cy="12" r="3" fill="#E13838"/>
+  <circle cx="22" cy="12" r="3" fill="#A855F7"/>
+  <circle cx="32" cy="12" r="3" fill="#C084FC"/>
   <g class="mono" font-size="9">
-    <text x="10" y="34" fill="#8a7849">1</text><text x="24" y="34" fill="#F5E6C8">def </text><text x="52" y="34" fill="#DC2626">solve</text><text x="88" y="34" fill="#F5E6C8">(q):</text>
-    <text x="10" y="48" fill="#8a7849">2</text><text x="30" y="48" fill="#C9B48A">ctx = </text><text x="68" y="48" fill="#F5E6C8">retrieve(q)</text>
-    <text x="10" y="62" fill="#8a7849">3</text><text x="30" y="62" fill="#C9B48A">a = </text><text x="58" y="62" fill="#F5E6C8">gemini(ctx, q)</text>
-    <text x="10" y="76" fill="#8a7849">4</text><text x="30" y="76" fill="#C9B48A">b = </text><text x="58" y="76" fill="#F5E6C8">openai(ctx, q)</text>
-    <text x="10" y="90" fill="#8a7849">5</text><text x="30" y="90" fill="#C9B48A">return </text><text x="78" y="90" fill="#F5E6C8">merge(a, b)</text>
-    <text x="10" y="104" fill="#8a7849">6</text>
+    <text x="10" y="36" fill="#4C1D95">1</text><text x="24" y="36" fill="#F8FAFC">def </text><text x="52" y="36" fill="#E13838">solve</text><text x="88" y="36" fill="#F8FAFC">(q):</text>
+    <text x="10" y="50" fill="#4C1D95">2</text><text x="30" y="50" fill="#A855F7">ctx = </text><text x="68" y="50" fill="#F8FAFC">retrieve(q)</text>
+    <text x="10" y="64" fill="#4C1D95">3</text><text x="30" y="64" fill="#A855F7">a = </text><text x="58" y="64" fill="#F8FAFC">gemini(ctx, q)</text>
+    <text x="10" y="78" fill="#4C1D95">4</text><text x="30" y="78" fill="#A855F7">b = </text><text x="58" y="78" fill="#F8FAFC">openai(ctx, q)</text>
+    <text x="10" y="92" fill="#4C1D95">5</text><text x="30" y="92" fill="#A855F7">return </text><text x="78" y="92" fill="#F8FAFC">merge(a, b)</text>
+    <text x="10" y="106" fill="#4C1D95">6</text>
+    <text x="10" y="120" fill="#4C1D95">7</text>
   </g>
-  <!-- cursor -->
-  <rect x="24" y="97" width="7" height="10" fill="#DC2626" class="blink"/>
+  <rect x="24" y="99" width="7" height="10" fill="#E13838" class="blink"/>
 </g>
 
-<!-- Metrics row -->
-<g transform="translate(18,170)">
-  <text x="0" y="0" class="mono" font-size="10" letter-spacing="3" fill="#8a7849">METRICS</text>
+<g transform="translate(18,186)">
+  <text x="0" y="0" class="mono" font-size="10" letter-spacing="3" fill="#7C3AED">· METRICS ·</text>
   <g transform="translate(0,10)">
-    <rect width="148" height="56" rx="8" fill="#140807" stroke="#3f1515"/>
-    <text x="10" y="22" class="mono" font-size="9" fill="#8a7849">RETRIEVAL</text>
-    <text x="10" y="42" class="mono" font-size="10" fill="#F5E6C8">FAISS vector store</text>
+    <rect width="148" height="56" rx="8" fill="#140824" stroke="#4C1D95"/>
+    <text x="10" y="22" class="mono" font-size="9" fill="#7C3AED">RETRIEVAL</text>
+    <text x="10" y="42" class="mono" font-size="10" fill="#F8FAFC">FAISS vector store</text>
   </g>
   <g transform="translate(156,10)">
-    <rect width="150" height="56" rx="8" fill="#140807" stroke="#3f1515"/>
-    <text x="10" y="22" class="mono" font-size="9" fill="#8a7849">MODELS</text>
-    <text x="10" y="42" class="mono" font-size="10" fill="#F5E6C8">Gemini + OpenAI</text>
+    <rect width="150" height="56" rx="8" fill="#140824" stroke="#4C1D95"/>
+    <text x="10" y="22" class="mono" font-size="9" fill="#7C3AED">MODELS</text>
+    <text x="10" y="42" class="mono" font-size="10" fill="#F8FAFC">Gemini + OpenAI</text>
   </g>
   <g transform="translate(314,10)">
-    <rect width="150" height="56" rx="8" fill="#140807" stroke="#3f1515"/>
-    <text x="10" y="22" class="mono" font-size="9" fill="#8a7849">SECURITY</text>
-    <text x="10" y="42" class="mono" font-size="10" fill="#DC2626">BYO-key · isolated</text>
+    <rect width="150" height="56" rx="8" fill="#140824" stroke="#4C1D95"/>
+    <text x="10" y="22" class="mono" font-size="9" fill="#7C3AED">SECURITY</text>
+    <text x="10" y="42" class="mono" font-size="10" fill="#E13838">BYO-key · isolated</text>
   </g>
 </g>
 
-<!-- footer tag -->
-<text x="18" y="245" class="mono" font-size="10" letter-spacing="3" fill="#C9B48A">→ CodePilot-AI</text>
-<text x="472" y="245" text-anchor="end" class="mono" font-size="10" letter-spacing="3" fill="#8a7849">github.com/Anandtripathiii</text>
+<text x="472" y="265" text-anchor="end" class="mono" font-size="9" letter-spacing="3" fill="#4C1D95">github.com/Anandtripathiii/CodePilot-AI</text>
 </svg>

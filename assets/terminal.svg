@@ -1,100 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="400" viewBox="0 0 1000 400" role="img" aria-label="whoami: Anand Tripathi, Software and AI/ML Engineer. anandtripathiiiofficial@gmail.com">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="340" viewBox="0 0 1000 340" role="img" aria-label="whoami — Anand Tripathi">
 <style>
-  .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
   .blink { animation: blink 1s steps(1) infinite; }
   @keyframes blink { 50% { opacity: 0; } }
   @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
 </style>
 <defs>
-  <linearGradient id="win" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#140807"/><stop offset="1" stop-color="#0A0806"/>
-  </linearGradient>
-  <linearGradient id="brd" x1="0" x2="1">
-    <stop offset="0" stop-color="#DC2626"/><stop offset="1" stop-color="#F5E6C8"/>
-  </linearGradient>
-  <linearGradient id="pfp" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#DC2626"/><stop offset=".55" stop-color="#991B1B"/><stop offset="1" stop-color="#F5E6C8"/>
-  </linearGradient>
-  <filter id="blur"><feGaussianBlur stdDeviation="2"/></filter>
+  <linearGradient id="win" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#140a24"/><stop offset="1" stop-color="#050308"/></linearGradient>
+  <linearGradient id="brd" x1="0" x2="1"><stop offset="0" stop-color="#A855F7"/><stop offset="1" stop-color="#E13838"/></linearGradient>
 </defs>
 
 <!-- Window chrome -->
-<rect x="4" y="4" width="992" height="392" rx="14" fill="url(#win)" stroke="url(#brd)" stroke-width="1.4"/>
-<rect x="4" y="4" width="992" height="34" rx="14" fill="#1a0a08"/>
-<rect x="4" y="30" width="992" height="8" fill="#1a0a08"/>
-<circle cx="26" cy="21" r="6" fill="#DC2626"/>
-<circle cx="46" cy="21" r="6" fill="#E8B06B"/>
-<circle cx="66" cy="21" r="6" fill="#C9B48A"/>
-<text x="500" y="25" text-anchor="middle" class="mono" font-size="12" letter-spacing="2" fill="#8a7849">~/anandtripathiii — zsh — 110×30</text>
+<rect x="4" y="4" width="992" height="332" rx="14" fill="url(#win)" stroke="url(#brd)" stroke-width="2"/>
+<rect x="4" y="4" width="992" height="34" rx="14" fill="#1a0a2e"/>
+<rect x="4" y="30" width="992" height="8" fill="#1a0a2e"/>
+<circle cx="26" cy="21" r="6" fill="#E13838"/>
+<circle cx="46" cy="21" r="6" fill="#A855F7"/>
+<circle cx="66" cy="21" r="6" fill="#C084FC"/>
+<text x="500" y="25" text-anchor="middle" class="mono" font-size="12" letter-spacing="2" fill="#7C3AED">~/anandtripathiii — zsh — 110×30</text>
 
 <!-- Prompt line -->
-<text x="30" y="70" class="mono" font-size="14" fill="#F5E6C8">
-  <tspan fill="#DC2626">anand@portfolio</tspan>
-  <tspan fill="#8a7849"> ~ </tspan>
-  <tspan fill="#DC2626">$</tspan>
-  <tspan fill="#F5E6C8"> neofetch</tspan>
+<text x="30" y="70" class="mono" font-size="14" fill="#F8FAFC">
+  <tspan fill="#E13838">anand@portfolio</tspan>
+  <tspan fill="#7C3AED"> ~ </tspan>
+  <tspan fill="#E13838">$</tspan>
+  <tspan fill="#F8FAFC"> neofetch</tspan>
 </text>
 
-<!-- "AT" pixel-art avatar (sand → red gradient blocks) -->
-<g transform="translate(42,96)">
-  <rect width="150" height="150" rx="10" fill="url(#pfp)" opacity=".18"/>
-  <rect width="150" height="150" rx="10" fill="none" stroke="#DC2626" stroke-width="1" stroke-opacity=".4"/>
-  <g transform="translate(18,22)" fill="#F5E6C8">
-    <!-- A -->
-    <rect x="0" y="0" width="12" height="12"/><rect x="12" y="0" width="12" height="12"/><rect x="24" y="0" width="12" height="12"/><rect x="36" y="0" width="12" height="12"/>
-    <rect x="0" y="12" width="12" height="12"/><rect x="36" y="12" width="12" height="12"/>
-    <rect x="0" y="24" width="12" height="12"/><rect x="12" y="24" width="12" height="12"/><rect x="24" y="24" width="12" height="12"/><rect x="36" y="24" width="12" height="12"/>
-    <rect x="0" y="36" width="12" height="12"/><rect x="36" y="36" width="12" height="12"/>
-    <rect x="0" y="48" width="12" height="12"/><rect x="36" y="48" width="12" height="12"/>
-    <!-- gap -->
-    <!-- T -->
-    <g fill="#DC2626" transform="translate(64,0)">
-      <rect x="0" y="0" width="12" height="12"/><rect x="12" y="0" width="12" height="12"/><rect x="24" y="0" width="12" height="12"/><rect x="36" y="0" width="12" height="12"/>
-      <rect x="12" y="12" width="12" height="12"/>
-      <rect x="12" y="24" width="12" height="12"/>
-      <rect x="12" y="36" width="12" height="12"/>
-      <rect x="12" y="48" width="12" height="12"/>
-    </g>
-  </g>
-  <text x="75" y="134" text-anchor="middle" class="mono" font-size="11" letter-spacing="4" fill="#C9B48A">AI · ENGINEER</text>
-</g>
-
-<!-- Info columns -->
+<!-- Info columns, no logo (we have the pixel panel already) -->
 <g class="mono" font-size="14">
-  <text x="220" y="110" fill="#DC2626">Anand Tripathi</text>
-  <text x="220" y="128" fill="#8a7849">———————————————————————————————————</text>
+  <text x="30" y="110" fill="#A855F7">Anand Tripathi</text>
+  <text x="30" y="128" fill="#4C1D95">————————————————————————————————————————————————————————————————————————————</text>
 
-  <g>
-    <text x="220" y="150" fill="#DC2626">Role     </text><text x="330" y="150" fill="#F5E6C8">· Software Engineer · AI / ML Engineer</text>
-    <text x="220" y="170" fill="#DC2626">Mail     </text><text x="330" y="170" fill="#F5E6C8">· anandtripathiiiofficial@gmail.com</text>
-    <text x="220" y="190" fill="#DC2626">Degree   </text><text x="330" y="190" fill="#F5E6C8">· B.Tech CSE · ADGIPS, GGSIPU (2024–2028)</text>
-    <text x="220" y="210" fill="#DC2626">Base     </text><text x="330" y="210" fill="#F5E6C8">· Delhi, India</text>
-    <text x="220" y="230" fill="#DC2626">Shell    </text><text x="330" y="230" fill="#F5E6C8">· Python · JavaScript · C / C++ · SQL</text>
-    <text x="220" y="250" fill="#DC2626">Stack    </text><text x="330" y="250" fill="#F5E6C8">· FastAPI · Flask · Next.js · Node.js · Postgres</text>
-    <text x="220" y="270" fill="#DC2626">AI       </text><text x="330" y="270" fill="#F5E6C8">· RAG · FAISS · ChromaDB · Gemini · OpenAI</text>
-    <text x="220" y="290" fill="#DC2626">Status   </text><text x="330" y="290" fill="#F5E6C8">· Building, shipping, open to SDE / AI roles</text>
-  </g>
-
-  <!-- color palette strip -->
-  <g transform="translate(220,310)">
-    <rect x="0"   y="0" width="28" height="12" fill="#F5E6C8"/>
-    <rect x="30"  y="0" width="28" height="12" fill="#E8D4A2"/>
-    <rect x="60"  y="0" width="28" height="12" fill="#C9B48A"/>
-    <rect x="90"  y="0" width="28" height="12" fill="#8a7849"/>
-    <rect x="120" y="0" width="28" height="12" fill="#DC2626"/>
-    <rect x="150" y="0" width="28" height="12" fill="#B91C1C"/>
-    <rect x="180" y="0" width="28" height="12" fill="#991B1B"/>
-    <rect x="210" y="0" width="28" height="12" fill="#5a1414"/>
-    <rect x="240" y="0" width="28" height="12" fill="#1a0a08"/>
-  </g>
+  <text x="30"  y="152" fill="#E13838">Role     </text><text x="140" y="152" fill="#F8FAFC">· Software Engineer · AI / ML Engineer · Full-Stack Developer</text>
+  <text x="30"  y="172" fill="#E13838">Mail     </text><text x="140" y="172" fill="#F8FAFC">· anandtripathiiiofficial@gmail.com</text>
+  <text x="30"  y="192" fill="#E13838">Site     </text><text x="140" y="192" fill="#F8FAFC">· anand-ouiii.vercel.app</text>
+  <text x="30"  y="212" fill="#E13838">Degree   </text><text x="140" y="212" fill="#F8FAFC">· B.Tech CSE · ADGIPS, GGSIPU (2024 – 2028)</text>
+  <text x="30"  y="232" fill="#E13838">Base     </text><text x="140" y="232" fill="#F8FAFC">· Delhi, India</text>
+  <text x="30"  y="252" fill="#E13838">Shell    </text><text x="140" y="252" fill="#F8FAFC">· Python · JavaScript · C / C++ · SQL</text>
+  <text x="30"  y="272" fill="#E13838">Stack    </text><text x="140" y="272" fill="#F8FAFC">· FastAPI · Flask · Next.js · Node.js · Postgres · MongoDB</text>
+  <text x="30"  y="292" fill="#E13838">AI       </text><text x="140" y="292" fill="#F8FAFC">· RAG · FAISS · ChromaDB · Gemini · OpenAI · LangChain · Hugging Face</text>
 </g>
 
-<!-- Second prompt + blinking cursor -->
-<text x="30" y="358" class="mono" font-size="14" fill="#F5E6C8">
-  <tspan fill="#DC2626">anand@portfolio</tspan>
-  <tspan fill="#8a7849"> ~ </tspan>
-  <tspan fill="#DC2626">$</tspan>
-  <tspan fill="#F5E6C8"> _ </tspan>
+<!-- Palette strip -->
+<g transform="translate(760,100)">
+  <rect x="0"   y="0" width="24" height="12" fill="#F8FAFC"/>
+  <rect x="26"  y="0" width="24" height="12" fill="#C084FC"/>
+  <rect x="52"  y="0" width="24" height="12" fill="#A855F7"/>
+  <rect x="78"  y="0" width="24" height="12" fill="#7C3AED"/>
+  <rect x="104" y="0" width="24" height="12" fill="#4C1D95"/>
+  <rect x="0"   y="14" width="24" height="12" fill="#E13838"/>
+  <rect x="26"  y="14" width="24" height="12" fill="#B91C1C"/>
+  <rect x="52"  y="14" width="24" height="12" fill="#B07655"/>
+  <rect x="78"  y="14" width="24" height="12" fill="#1a0a2e"/>
+  <rect x="104" y="14" width="24" height="12" fill="#050308"/>
+</g>
+
+<!-- Second prompt + cursor -->
+<text x="30" y="316" class="mono" font-size="14" fill="#F8FAFC">
+  <tspan fill="#E13838">anand@portfolio</tspan>
+  <tspan fill="#7C3AED"> ~ </tspan>
+  <tspan fill="#E13838">$</tspan>
+  <tspan fill="#F8FAFC"> _ </tspan>
 </text>
-<rect x="148" y="345" width="10" height="16" fill="#F5E6C8" class="blink"/>
+<rect x="148" y="303" width="10" height="16" fill="#A855F7" class="blink"/>
 </svg>
