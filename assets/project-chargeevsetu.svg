@@ -1,85 +1,118 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="490" height="280" viewBox="0 0 490 280" role="img" aria-label="ChargeEVSetu">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" role="img" aria-label="ChargeEVSetu — featured project">
 <style>
   .mono { font-family: ui-monospace, Menlo, Consolas, monospace; }
   .sans { font-family: -apple-system, 'Segoe UI', Helvetica, sans-serif; }
   .bolt { animation: bolt 1.6s ease-in-out infinite; }
-  @keyframes bolt { 0%,100% { opacity:.3; } 50% { opacity:1; } }
+  @keyframes bolt { 0%,100% { opacity:.4; } 50% { opacity:1; } }
   .ping { animation: ping 2.4s cubic-bezier(0,0,.2,1) infinite; transform-box:fill-box; transform-origin:center; }
-  @keyframes ping { 0% { transform:scale(1); opacity:.6; } 80%,100% { transform:scale(2.4); opacity:0; } }
+  @keyframes ping { 0% { transform:scale(1); opacity:.6; } 80%,100% { transform:scale(2.6); opacity:0; } }
+  .pulse { animation: pulse 2.2s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { opacity:.4; } 50% { opacity:1; } }
   @media (prefers-reduced-motion: reduce) { * { animation:none !important; } }
 </style>
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1a0a2e"/><stop offset="1" stop-color="#050308"/></linearGradient>
-  <linearGradient id="brd" x1="0" x2="1"><stop offset="0" stop-color="#E13838"/><stop offset="1" stop-color="#A855F7"/></linearGradient>
+  <linearGradient id="brd" x1="0" x2="1">
+    <stop offset="0" stop-color="#A855F7"/><stop offset=".5" stop-color="#E13838"/><stop offset="1" stop-color="#A855F7"/>
+  </linearGradient>
+  <radialGradient id="glowCore" cx="710" cy="170" r="200" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#E13838" stop-opacity=".32"/>
+    <stop offset=".5" stop-color="#A855F7" stop-opacity=".15"/>
+    <stop offset="1" stop-color="#A855F7" stop-opacity="0"/>
+  </radialGradient>
 </defs>
-<rect x="1" y="1" width="488" height="278" rx="14" fill="url(#bg)" stroke="url(#brd)" stroke-width="2"/>
 
-<g transform="translate(18,16)">
-  <rect width="12" height="14" fill="#A855F7"/>
-  <text x="22" y="12" class="mono" font-size="10" letter-spacing="3" fill="#C084FC">[ 06 ] · CHARGE-EV-SETU</text>
+<rect x="2" y="2" width="996" height="356" rx="18" fill="url(#bg)"/>
+<rect x="2" y="2" width="996" height="356" rx="18" fill="url(#glowCore)"/>
+<!-- static outline -->
+<rect x="2" y="2" width="996" height="356" rx="18" fill="none" stroke="#4C1D95" stroke-width="1.4"/>
+<!-- animated moving dashed outline -->
+<rect x="2" y="2" width="996" height="356" rx="18" fill="none" stroke="url(#brd)" stroke-width="2.4" stroke-dasharray="24 14">
+  <animate attributeName="stroke-dashoffset" from="0" to="-38" dur="2s" repeatCount="indefinite"/>
+</rect>
+
+<!-- Section header -->
+<g transform="translate(32,30)">
+  <rect width="12" height="14" fill="#E13838"/>
+  <text x="22" y="12" class="mono" font-size="10" letter-spacing="3" fill="#C084FC">[ 07 ] · FEATURED · CHARGE-EV-SETU</text>
 </g>
-<g transform="translate(18,42)">
-  <rect width="124" height="20" rx="4" fill="#991B1B"/>
-  <text x="62" y="14" text-anchor="middle" class="mono" font-size="9" letter-spacing="1.6" fill="#F8FAFC">EV MAP INDIA</text>
-  <rect x="150" width="150" height="20" rx="4" fill="#1a0a2e" stroke="#4C1D95"/>
-  <text x="225" y="14" text-anchor="middle" class="mono" font-size="9" letter-spacing="1.6" fill="#A855F7">TECHFEST · IITB · PS1</text>
+
+<!-- Chips -->
+<g transform="translate(32,56)">
+  <rect width="150" height="22" rx="4" fill="#991B1B"/>
+  <text x="75" y="15" text-anchor="middle" class="mono" font-size="10" letter-spacing="1.6" fill="#F8FAFC">EV MAP INDIA · PS1</text>
+  <rect x="160" width="180" height="22" rx="4" fill="#1a0a2e" stroke="#4C1D95"/>
+  <text x="250" y="15" text-anchor="middle" class="mono" font-size="10" letter-spacing="1.6" fill="#A855F7">TECHFEST · IIT BOMBAY</text>
+  <rect x="350" width="140" height="22" rx="4" fill="#1a0a2e" stroke="#A855F7"/>
+  <text x="420" y="15" text-anchor="middle" class="mono" font-size="10" letter-spacing="1.6" fill="#C084FC">TEAM MARLBROS FC</text>
 </g>
 
-<text x="18" y="100" class="sans" font-size="24" font-weight="900" fill="#F8FAFC">ChargeEVSetu</text>
-<text x="18" y="124" class="sans" font-size="12" fill="#C084FC">India's EV charging map, gap-analysis</text>
-<text x="18" y="140" class="sans" font-size="12" fill="#C084FC">and planning lab — built for public use.</text>
+<!-- Title + description -->
+<text x="32" y="130" class="sans" font-size="40" font-weight="900" fill="#F8FAFC">ChargeEVSetu</text>
+<text x="32" y="168" class="sans" font-size="15" fill="#C084FC">India's EV charging map, gap-analysis and planning lab —</text>
+<text x="32" y="188" class="sans" font-size="15" fill="#C084FC">built for real public users, not just judges.</text>
 
-<!-- India outline + charging pins -->
-<g transform="translate(295,56)">
-  <!-- rough India shape pixels -->
-  <g fill="#1A1030" stroke="#4C1D95" stroke-width="1">
-    <polygon points="80,0 110,10 130,30 140,60 130,90 110,120 95,135 85,120 70,110 60,90 55,70 50,50 55,30 65,15"/>
+<text x="32" y="222" class="mono" font-size="10" letter-spacing="4" fill="#7C3AED">V2 · 7 PUBLIC PAGES</text>
+<text x="32" y="242" class="sans" font-size="12" fill="#F8FAFC">Home · EV Map · Gap Analysis · Planning Lab · Forecast ·</text>
+<text x="32" y="258" class="sans" font-size="12" fill="#F8FAFC">Delivery Rider Charging Network · Plugsy peer-to-peer sharing</text>
+
+<!-- Metrics row -->
+<g transform="translate(32,282)">
+  <g transform="translate(0,0)">
+    <rect width="152" height="58" rx="8" fill="#140824" stroke="#4C1D95"/>
+    <text x="12" y="22" class="mono" font-size="9" fill="#7C3AED">ROLE</text>
+    <text x="12" y="44" class="mono" font-size="11" fill="#F8FAFC">team leader</text>
+  </g>
+  <g transform="translate(160,0)">
+    <rect width="152" height="58" rx="8" fill="#140824" stroke="#4C1D95"/>
+    <text x="12" y="22" class="mono" font-size="9" fill="#7C3AED">BRAND</text>
+    <text x="12" y="44" class="mono" font-size="11" fill="#F8FAFC">#F87171 · #E5E7EB</text>
+  </g>
+  <g transform="translate(320,0)">
+    <rect width="152" height="58" rx="8" fill="#140824" stroke="#4C1D95"/>
+    <text x="12" y="22" class="mono" font-size="9" fill="#7C3AED">DEPLOY</text>
+    <text x="12" y="44" class="mono" font-size="11" fill="#E13838">Vercel · live</text>
+  </g>
+</g>
+
+<!-- India + pinging charger pins on the right -->
+<g transform="translate(620,70)">
+  <!-- rough India silhouette with purple fill -->
+  <g fill="#1A1030" stroke="#A855F7" stroke-width="1.4">
+    <polygon points="130,0 170,16 196,44 212,88 198,132 172,170 150,196 134,170 110,160 92,130 82,100 76,70 84,44 100,20"/>
   </g>
   <!-- pins -->
   <g>
-    <circle cx="85" cy="30" r="4" fill="#E13838"/>
-    <circle cx="85" cy="30" r="4" fill="#E13838" class="ping"/>
+    <circle cx="140" cy="42" r="5" fill="#E13838"/>
+    <circle cx="140" cy="42" r="5" fill="#E13838" class="ping"/>
   </g>
   <g>
-    <circle cx="70" cy="60" r="4" fill="#A855F7"/>
-    <circle cx="70" cy="60" r="4" fill="#A855F7" class="ping"/>
+    <circle cx="112" cy="86" r="5" fill="#A855F7"/>
+    <circle cx="112" cy="86" r="5" fill="#A855F7" class="ping"/>
   </g>
   <g>
-    <circle cx="105" cy="55" r="4" fill="#E13838"/>
-    <circle cx="105" cy="55" r="4" fill="#E13838" class="ping"/>
+    <circle cx="160" cy="80" r="5" fill="#E13838"/>
+    <circle cx="160" cy="80" r="5" fill="#E13838" class="ping"/>
   </g>
   <g>
-    <circle cx="95" cy="90" r="4" fill="#C084FC"/>
-    <circle cx="95" cy="90" r="4" fill="#C084FC" class="ping"/>
+    <circle cx="146" cy="128" r="5" fill="#C084FC"/>
+    <circle cx="146" cy="128" r="5" fill="#C084FC" class="ping"/>
   </g>
   <g>
-    <circle cx="80" cy="115" r="4" fill="#A855F7"/>
-    <circle cx="80" cy="115" r="4" fill="#A855F7" class="ping"/>
+    <circle cx="124" cy="166" r="5" fill="#A855F7"/>
+    <circle cx="124" cy="166" r="5" fill="#A855F7" class="ping"/>
   </g>
-  <!-- bolt icon top right -->
-  <g transform="translate(140,10)" class="bolt" fill="#E13838">
-    <polygon points="8,0 0,14 6,14 2,24 14,10 8,10 12,0"/>
+  <!-- bolt icon -->
+  <g transform="translate(222,10)" class="bolt" fill="#E13838">
+    <polygon points="12,0 0,22 8,22 2,38 22,16 12,16 18,0"/>
+  </g>
+  <!-- Floating label -->
+  <g transform="translate(240,180)">
+    <rect x="0" y="0" width="110" height="28" rx="14" fill="#140824" stroke="#A855F7"/>
+    <circle cx="14" cy="14" r="4" fill="#E13838" class="pulse"/>
+    <text x="26" y="18" class="mono" font-size="10" letter-spacing="2" fill="#F8FAFC">PUBLIC · V2</text>
   </g>
 </g>
 
-<g transform="translate(18,186)">
-  <text x="0" y="0" class="mono" font-size="10" letter-spacing="3" fill="#7C3AED">· METRICS ·</text>
-  <g transform="translate(0,10)">
-    <rect width="148" height="56" rx="8" fill="#140824" stroke="#4C1D95"/>
-    <text x="10" y="22" class="mono" font-size="9" fill="#7C3AED">TEAM</text>
-    <text x="10" y="42" class="mono" font-size="10" fill="#F8FAFC">Marlbros FC · leader</text>
-  </g>
-  <g transform="translate(156,10)">
-    <rect width="150" height="56" rx="8" fill="#140824" stroke="#4C1D95"/>
-    <text x="10" y="22" class="mono" font-size="9" fill="#7C3AED">V2 PAGES</text>
-    <text x="10" y="42" class="mono" font-size="10" fill="#F8FAFC">7 public tools</text>
-  </g>
-  <g transform="translate(314,10)">
-    <rect width="150" height="56" rx="8" fill="#140824" stroke="#4C1D95"/>
-    <text x="10" y="22" class="mono" font-size="9" fill="#7C3AED">DEPLOY</text>
-    <text x="10" y="42" class="mono" font-size="10" fill="#E13838">Vercel · live</text>
-  </g>
-</g>
-
-<text x="472" y="265" text-anchor="end" class="mono" font-size="9" letter-spacing="3" fill="#4C1D95">github.com/Anandtripathiii/chargeevsetu</text>
+<text x="968" y="340" text-anchor="end" class="mono" font-size="10" letter-spacing="3" fill="#4C1D95">github.com/Anandtripathiii/chargeevsetu</text>
 </svg>

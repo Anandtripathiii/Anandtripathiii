@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="340" viewBox="0 0 1000 340" role="img" aria-label="whoami — Anand Tripathi">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="400" viewBox="0 0 1000 400" role="img" aria-label="whoami — Anand Tripathi">
 <style>
-  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  .mono { font-family: ui-monospace, Menlo, Consolas, monospace; }
   .blink { animation: blink 1s steps(1) infinite; }
   @keyframes blink { 50% { opacity: 0; } }
   @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
@@ -8,10 +8,83 @@
 <defs>
   <linearGradient id="win" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#140a24"/><stop offset="1" stop-color="#050308"/></linearGradient>
   <linearGradient id="brd" x1="0" x2="1"><stop offset="0" stop-color="#A855F7"/><stop offset="1" stop-color="#E13838"/></linearGradient>
+  <radialGradient id="aglow" cx="90" cy="200" r="110" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#A855F7" stop-opacity=".4"/>
+    <stop offset="1" stop-color="#A855F7" stop-opacity="0"/>
+  </radialGradient>
+
+  <!-- Pixel avatar pieces, same character used in about-banner too -->
+  <g id="pix-hair">
+    <g fill="#241428">
+      <rect x="36" y="12" width="24" height="6"/><rect x="60" y="6" width="30" height="6"/>
+      <rect x="90" y="0" width="36" height="6"/><rect x="126" y="6" width="30" height="6"/>
+      <rect x="156" y="12" width="24" height="6"/><rect x="30" y="18" width="156" height="30"/>
+      <rect x="24" y="24" width="168" height="24"/>
+      <rect x="24" y="48" width="18" height="30"/><rect x="174" y="48" width="18" height="30"/>
+    </g>
+    <g fill="#7C3AED">
+      <rect x="42" y="18" width="12" height="4"/><rect x="78" y="12" width="12" height="4"/>
+      <rect x="126" y="12" width="12" height="4"/><rect x="162" y="18" width="12" height="4"/>
+    </g>
+    <g fill="#A855F7" opacity=".75">
+      <rect x="96" y="6" width="8" height="4"/><rect x="108" y="6" width="8" height="4"/>
+    </g>
+  </g>
+  <g id="pix-head">
+    <g fill="#E13838">
+      <rect x="48" y="12" width="12" height="6"/><rect x="60" y="6" width="96" height="6"/>
+      <rect x="156" y="12" width="12" height="6"/><rect x="42" y="18" width="12" height="6"/>
+      <rect x="162" y="18" width="12" height="6"/>
+      <rect x="18" y="60" width="24" height="42"/><rect x="12" y="66" width="30" height="30"/>
+      <rect x="168" y="60" width="24" height="42"/><rect x="168" y="66" width="30" height="30"/>
+    </g>
+    <g fill="#050308">
+      <rect x="24" y="72" width="12" height="18"/><rect x="174" y="72" width="12" height="18"/>
+    </g>
+    <g fill="#B07655">
+      <rect x="54" y="54" width="108" height="60"/><rect x="48" y="60" width="120" height="48"/>
+      <rect x="60" y="48" width="96" height="12"/><rect x="84" y="114" width="48" height="18"/>
+    </g>
+    <g fill="#8B5A3C">
+      <rect x="150" y="60" width="12" height="48"/><rect x="54" y="108" width="108" height="6"/>
+      <rect x="84" y="126" width="48" height="6"/>
+      <rect x="102" y="84" width="12" height="6"/><rect x="102" y="78" width="6" height="6"/>
+    </g>
+    <!-- eyes -->
+    <rect x="72"  y="78" width="18" height="12" fill="#F8FAFC"/>
+    <rect x="126" y="78" width="18" height="12" fill="#F8FAFC"/>
+    <rect x="78"  y="82" width="6"  height="6"  fill="#0A0612"/>
+    <rect x="132" y="82" width="6"  height="6"  fill="#0A0612"/>
+    <!-- mouth -->
+    <rect x="96"  y="96"  width="4"  height="4" fill="#4C1D95"/>
+    <rect x="100" y="100" width="20" height="4" fill="#4C1D95"/>
+    <rect x="120" y="96"  width="4"  height="4" fill="#4C1D95"/>
+  </g>
+  <g id="pix-hoodie">
+    <g fill="#1a1030">
+      <rect x="24" y="132" width="168" height="78"/>
+      <rect x="6"  y="150" width="18"  height="60"/>
+      <rect x="192" y="150" width="18" height="60"/>
+    </g>
+    <g fill="#2b1a44">
+      <rect x="18" y="138" width="6" height="72"/>
+      <rect x="192" y="138" width="6" height="72"/>
+      <rect x="24" y="132" width="168" height="6"/>
+    </g>
+    <g fill="#4C1D95">
+      <rect x="96" y="132" width="24" height="12"/>
+      <rect x="90" y="138" width="6" height="12"/>
+      <rect x="120" y="138" width="6" height="12"/>
+    </g>
+    <g fill="#A855F7">
+      <rect x="90" y="150" width="4" height="24"/>
+      <rect x="122" y="150" width="4" height="24"/>
+    </g>
+  </g>
 </defs>
 
 <!-- Window chrome -->
-<rect x="4" y="4" width="992" height="332" rx="14" fill="url(#win)" stroke="url(#brd)" stroke-width="2"/>
+<rect x="4" y="4" width="992" height="392" rx="14" fill="url(#win)" stroke="url(#brd)" stroke-width="2"/>
 <rect x="4" y="4" width="992" height="34" rx="14" fill="#1a0a2e"/>
 <rect x="4" y="30" width="992" height="8" fill="#1a0a2e"/>
 <circle cx="26" cy="21" r="6" fill="#E13838"/>
@@ -21,47 +94,59 @@
 
 <!-- Prompt line -->
 <text x="30" y="70" class="mono" font-size="14" fill="#F8FAFC">
-  <tspan fill="#E13838">anand@portfolio</tspan>
-  <tspan fill="#7C3AED"> ~ </tspan>
-  <tspan fill="#E13838">$</tspan>
-  <tspan fill="#F8FAFC"> neofetch</tspan>
+  <tspan fill="#E13838">anand@portfolio</tspan><tspan fill="#7C3AED"> ~ </tspan><tspan fill="#E13838">$</tspan><tspan fill="#F8FAFC"> neofetch</tspan>
 </text>
 
-<!-- Info columns, no logo (we have the pixel panel already) -->
-<g class="mono" font-size="14">
-  <text x="30" y="110" fill="#A855F7">Anand Tripathi</text>
-  <text x="30" y="128" fill="#4C1D95">————————————————————————————————————————————————————————————————————————————</text>
+<!-- Pixel avatar panel on the left -->
+<g transform="translate(42,96)">
+  <rect x="-6" y="-4" width="168" height="238" rx="10" fill="url(#aglow)"/>
+  <rect x="-6" y="-4" width="168" height="238" rx="10" fill="none" stroke="#4C1D95" stroke-width="1" stroke-opacity=".6"/>
+  <!-- corner marks -->
+  <g fill="#A855F7">
+    <rect x="0"   y="2"   width="10" height="2"/><rect x="0"   y="2"   width="2" height="10"/>
+    <rect x="150" y="2"   width="10" height="2"/><rect x="158" y="2"   width="2" height="10"/>
+    <rect x="0"   y="226" width="10" height="2"/><rect x="0"   y="218" width="2" height="10"/>
+    <rect x="150" y="226" width="10" height="2"/><rect x="158" y="218" width="2" height="10"/>
+  </g>
+  <!-- Scaled avatar (210w × 216h native, scale .7) -->
+  <g transform="translate(0,0) scale(.72)">
+    <use href="#pix-hair"/><use href="#pix-head"/><use href="#pix-hoodie"/>
+  </g>
+  <text x="76" y="226" text-anchor="middle" class="mono" font-size="10" letter-spacing="3" fill="#C084FC">· AI ENGINEER ·</text>
+</g>
 
-  <text x="30"  y="152" fill="#E13838">Role     </text><text x="140" y="152" fill="#F8FAFC">· Software Engineer · AI / ML Engineer · Full-Stack Developer</text>
-  <text x="30"  y="172" fill="#E13838">Mail     </text><text x="140" y="172" fill="#F8FAFC">· anandtripathiiiofficial@gmail.com</text>
-  <text x="30"  y="192" fill="#E13838">Site     </text><text x="140" y="192" fill="#F8FAFC">· anand-ouiii.vercel.app</text>
-  <text x="30"  y="212" fill="#E13838">Degree   </text><text x="140" y="212" fill="#F8FAFC">· B.Tech CSE · ADGIPS, GGSIPU (2024 – 2028)</text>
-  <text x="30"  y="232" fill="#E13838">Base     </text><text x="140" y="232" fill="#F8FAFC">· Delhi, India</text>
-  <text x="30"  y="252" fill="#E13838">Shell    </text><text x="140" y="252" fill="#F8FAFC">· Python · JavaScript · C / C++ · SQL</text>
-  <text x="30"  y="272" fill="#E13838">Stack    </text><text x="140" y="272" fill="#F8FAFC">· FastAPI · Flask · Next.js · Node.js · Postgres · MongoDB</text>
-  <text x="30"  y="292" fill="#E13838">AI       </text><text x="140" y="292" fill="#F8FAFC">· RAG · FAISS · ChromaDB · Gemini · OpenAI · LangChain · Hugging Face</text>
+<!-- Info columns -->
+<g class="mono" font-size="14">
+  <text x="230" y="110" fill="#A855F7">Anand Tripathi</text>
+  <text x="230" y="128" fill="#4C1D95">————————————————————————————————————————</text>
+
+  <text x="230" y="150" fill="#E13838">Role     </text><text x="340" y="150" fill="#F8FAFC">· Software Engineer · AI / ML · Full-Stack</text>
+  <text x="230" y="170" fill="#E13838">Mail     </text><text x="340" y="170" fill="#F8FAFC">· anandtripathiiiofficial@gmail.com</text>
+  <text x="230" y="190" fill="#E13838">Site     </text><text x="340" y="190" fill="#F8FAFC">· anand-ouiii.vercel.app</text>
+  <text x="230" y="210" fill="#E13838">Degree   </text><text x="340" y="210" fill="#F8FAFC">· B.Tech CSE · ADGIPS, GGSIPU (2024 – 2028)</text>
+  <text x="230" y="230" fill="#E13838">Base     </text><text x="340" y="230" fill="#F8FAFC">· Delhi, India</text>
+  <text x="230" y="250" fill="#E13838">Shell    </text><text x="340" y="250" fill="#F8FAFC">· Python · JavaScript · C / C++ · SQL</text>
+  <text x="230" y="270" fill="#E13838">Stack    </text><text x="340" y="270" fill="#F8FAFC">· FastAPI · Flask · Next.js · Node.js · Postgres</text>
+  <text x="230" y="290" fill="#E13838">AI       </text><text x="340" y="290" fill="#F8FAFC">· RAG · FAISS · ChromaDB · Gemini · OpenAI</text>
+  <text x="230" y="310" fill="#E13838">Status   </text><text x="340" y="310" fill="#F8FAFC">· Building · Shipping · Open to SDE &amp; AI roles</text>
 </g>
 
 <!-- Palette strip -->
-<g transform="translate(760,100)">
+<g transform="translate(230,330)">
   <rect x="0"   y="0" width="24" height="12" fill="#F8FAFC"/>
   <rect x="26"  y="0" width="24" height="12" fill="#C084FC"/>
   <rect x="52"  y="0" width="24" height="12" fill="#A855F7"/>
   <rect x="78"  y="0" width="24" height="12" fill="#7C3AED"/>
   <rect x="104" y="0" width="24" height="12" fill="#4C1D95"/>
-  <rect x="0"   y="14" width="24" height="12" fill="#E13838"/>
-  <rect x="26"  y="14" width="24" height="12" fill="#B91C1C"/>
-  <rect x="52"  y="14" width="24" height="12" fill="#B07655"/>
-  <rect x="78"  y="14" width="24" height="12" fill="#1a0a2e"/>
-  <rect x="104" y="14" width="24" height="12" fill="#050308"/>
+  <rect x="130" y="0" width="24" height="12" fill="#E13838"/>
+  <rect x="156" y="0" width="24" height="12" fill="#B91C1C"/>
+  <rect x="182" y="0" width="24" height="12" fill="#1a0a2e"/>
+  <rect x="208" y="0" width="24" height="12" fill="#050308"/>
 </g>
 
 <!-- Second prompt + cursor -->
-<text x="30" y="316" class="mono" font-size="14" fill="#F8FAFC">
-  <tspan fill="#E13838">anand@portfolio</tspan>
-  <tspan fill="#7C3AED"> ~ </tspan>
-  <tspan fill="#E13838">$</tspan>
-  <tspan fill="#F8FAFC"> _ </tspan>
+<text x="230" y="362" class="mono" font-size="14" fill="#F8FAFC">
+  <tspan fill="#E13838">anand@portfolio</tspan><tspan fill="#7C3AED"> ~ </tspan><tspan fill="#E13838">$</tspan><tspan fill="#F8FAFC"> _ </tspan>
 </text>
-<rect x="148" y="303" width="10" height="16" fill="#A855F7" class="blink"/>
+<rect x="348" y="349" width="10" height="16" fill="#A855F7" class="blink"/>
 </svg>

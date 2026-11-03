@@ -1,9 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="250" viewBox="0 0 1000 250" role="img" aria-label="About Anand">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="320" viewBox="0 0 1000 320" role="img" aria-label="About — Anand Tripathi">
 <style>
   .mono { font-family: ui-monospace, Menlo, Consolas, monospace; }
   .sans { font-family: -apple-system, 'Segoe UI', Helvetica, sans-serif; }
   .pulse { animation: pulse 2.4s ease-in-out infinite; }
   @keyframes pulse { 0%,100% { opacity:.5; } 50% { opacity:1; } }
+  .float { animation: float 3s ease-in-out infinite; }
+  @keyframes float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-4px); } }
   @media (prefers-reduced-motion: reduce) { * { animation:none !important; } }
 </style>
 <defs>
@@ -13,45 +15,137 @@
   <linearGradient id="abrd" x1="0" x2="1">
     <stop offset="0" stop-color="#A855F7"/><stop offset=".5" stop-color="#E13838"/><stop offset="1" stop-color="#A855F7"/>
   </linearGradient>
-  <radialGradient id="halo" cx="200" cy="125" r="200">
-    <stop offset="0" stop-color="#A855F7" stop-opacity=".30"/>
+  <radialGradient id="charHalo" cx="140" cy="170" r="180" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#A855F7" stop-opacity=".32"/>
+    <stop offset=".6" stop-color="#E13838" stop-opacity=".10"/>
     <stop offset="1" stop-color="#A855F7" stop-opacity="0"/>
   </radialGradient>
+
+  <!-- Pixel avatar pieces: my own original character design -->
+  <g id="pix-hair">
+    <g fill="#241428">
+      <rect x="36" y="12" width="24" height="6"/><rect x="60" y="6" width="30" height="6"/>
+      <rect x="90" y="0" width="36" height="6"/><rect x="126" y="6" width="30" height="6"/>
+      <rect x="156" y="12" width="24" height="6"/><rect x="30" y="18" width="156" height="30"/>
+      <rect x="24" y="24" width="168" height="24"/>
+      <rect x="24" y="48" width="18" height="30"/><rect x="174" y="48" width="18" height="30"/>
+    </g>
+    <g fill="#7C3AED">
+      <rect x="42" y="18" width="12" height="4"/><rect x="78" y="12" width="12" height="4"/>
+      <rect x="126" y="12" width="12" height="4"/><rect x="162" y="18" width="12" height="4"/>
+    </g>
+    <g fill="#A855F7" opacity=".75">
+      <rect x="96" y="6" width="8" height="4"/><rect x="108" y="6" width="8" height="4"/>
+    </g>
+  </g>
+  <g id="pix-head">
+    <g fill="#E13838">
+      <rect x="48" y="12" width="12" height="6"/><rect x="60" y="6" width="96" height="6"/>
+      <rect x="156" y="12" width="12" height="6"/><rect x="42" y="18" width="12" height="6"/>
+      <rect x="162" y="18" width="12" height="6"/>
+      <rect x="18" y="60" width="24" height="42"/><rect x="12" y="66" width="30" height="30"/>
+      <rect x="168" y="60" width="24" height="42"/><rect x="168" y="66" width="30" height="30"/>
+    </g>
+    <g fill="#050308">
+      <rect x="24" y="72" width="12" height="18"/><rect x="174" y="72" width="12" height="18"/>
+    </g>
+    <g fill="#B07655">
+      <rect x="54" y="54" width="108" height="60"/><rect x="48" y="60" width="120" height="48"/>
+      <rect x="60" y="48" width="96" height="12"/><rect x="84" y="114" width="48" height="18"/>
+    </g>
+    <g fill="#8B5A3C">
+      <rect x="150" y="60" width="12" height="48"/><rect x="54" y="108" width="108" height="6"/>
+      <rect x="84" y="126" width="48" height="6"/>
+      <rect x="102" y="84" width="12" height="6"/><rect x="102" y="78" width="6" height="6"/>
+    </g>
+    <rect x="72"  y="78" width="18" height="12" fill="#F8FAFC"/>
+    <rect x="126" y="78" width="18" height="12" fill="#F8FAFC"/>
+    <rect x="78"  y="82" width="6"  height="6"  fill="#0A0612"/>
+    <rect x="132" y="82" width="6"  height="6"  fill="#0A0612"/>
+    <rect x="96"  y="96"  width="4"  height="4" fill="#4C1D95"/>
+    <rect x="100" y="100" width="20" height="4" fill="#4C1D95"/>
+    <rect x="120" y="96"  width="4"  height="4" fill="#4C1D95"/>
+  </g>
+  <g id="pix-hoodie">
+    <g fill="#1a1030">
+      <rect x="24" y="132" width="168" height="78"/>
+      <rect x="6"  y="150" width="18"  height="60"/>
+      <rect x="192" y="150" width="18" height="60"/>
+    </g>
+    <g fill="#2b1a44">
+      <rect x="18" y="138" width="6" height="72"/>
+      <rect x="192" y="138" width="6" height="72"/>
+      <rect x="24" y="132" width="168" height="6"/>
+    </g>
+    <g fill="#4C1D95">
+      <rect x="96" y="132" width="24" height="12"/>
+      <rect x="90" y="138" width="6" height="12"/>
+      <rect x="120" y="138" width="6" height="12"/>
+    </g>
+    <g fill="#A855F7">
+      <rect x="90" y="150" width="4" height="24"/>
+      <rect x="122" y="150" width="4" height="24"/>
+    </g>
+  </g>
 </defs>
 
-<rect x="1" y="1" width="998" height="248" rx="14" fill="url(#abg)" stroke="url(#abrd)" stroke-width="2"/>
-<rect x="1" y="1" width="998" height="248" rx="14" fill="url(#halo)"/>
+<rect x="2" y="2" width="996" height="316" rx="16" fill="url(#abg)"/>
+<rect x="2" y="2" width="996" height="316" rx="16" fill="url(#charHalo)"/>
+<rect x="2" y="2" width="996" height="316" rx="16" fill="none" stroke="url(#abrd)" stroke-width="2"/>
 
-<!-- Title -->
-<text x="28" y="60" class="sans" font-size="28" font-weight="900" fill="#F8FAFC">Shipping AI products you can actually trust.</text>
-<text x="28" y="94" class="sans" font-size="14" fill="#C084FC">B.Tech CSE at ADGIPS (GGSIPU). I design and deploy end-to-end AI systems — RAG pipelines,</text>
-<text x="28" y="112" class="sans" font-size="14" fill="#C084FC">multi-LLM orchestration, hardened FastAPI / Flask backends with per-session isolation,</text>
-<text x="28" y="130" class="sans" font-size="14" fill="#C084FC">rate limiting, and quote-verified answers against the source.</text>
-
-<!-- Right side pill badges -->
-<g transform="translate(640,32)" class="mono" font-size="11">
-  <rect width="330" height="30" rx="8" fill="#140824" stroke="#4C1D95"/>
-  <circle cx="18" cy="15" r="4" fill="#E13838" class="pulse"/>
-  <text x="30" y="19" fill="#F8FAFC">CORE  <tspan fill="#7C3AED">· software · applied AI · full-stack</tspan></text>
-
-  <g transform="translate(0,42)">
-    <rect width="330" height="30" rx="8" fill="#140824" stroke="#4C1D95"/>
-    <circle cx="18" cy="15" r="4" fill="#A855F7"/>
-    <text x="30" y="19" fill="#F8FAFC">DNA   <tspan fill="#7C3AED">· reliability · prompt-eng · guardrails</tspan></text>
-  </g>
-  <g transform="translate(0,84)">
-    <rect width="330" height="30" rx="8" fill="#140824" stroke="#4C1D95"/>
-    <circle cx="18" cy="15" r="4" fill="#E13838"/>
-    <text x="30" y="19" fill="#F8FAFC">OPEN  <tspan fill="#7C3AED">· SDE · AI / ML internships · OSS</tspan></text>
-  </g>
-  <g transform="translate(0,126)">
-    <rect width="330" height="30" rx="8" fill="#140824" stroke="#4C1D95"/>
-    <circle cx="18" cy="15" r="4" fill="#C084FC"/>
-    <text x="30" y="19" fill="#F8FAFC">BASE  <tspan fill="#7C3AED">· Delhi, India  ·  2024 – 2028</tspan></text>
-  </g>
+<!-- Section label -->
+<g transform="translate(32,30)">
+  <rect width="12" height="14" fill="#E13838" class="pulse"/>
+  <text x="22" y="12" class="mono" font-size="10" letter-spacing="3" fill="#C084FC">[ 01 ] · ABOUT ME</text>
 </g>
 
-<!-- Bottom tagline -->
-<rect x="28" y="196" width="420" height="2" fill="#4C1D95"/>
-<text x="28" y="224" class="mono" font-size="10" letter-spacing="4" fill="#7C3AED">clean architecture · reproducible pipelines · software that survives real users</text>
+<!-- Avatar on the left -->
+<g transform="translate(50,70) scale(.95)">
+  <!-- subtle frame -->
+  <rect x="-4" y="-4" width="220" height="226" rx="12" fill="none" stroke="#4C1D95"/>
+  <g fill="#A855F7">
+    <rect x="2"   y="4"   width="12" height="2"/><rect x="2"   y="4"   width="2" height="12"/>
+    <rect x="200" y="4"   width="12" height="2"/><rect x="210" y="4"   width="2" height="12"/>
+    <rect x="2"   y="212" width="12" height="2"/><rect x="2"   y="202" width="2" height="12"/>
+    <rect x="200" y="212" width="12" height="2"/><rect x="210" y="202" width="2" height="12"/>
+  </g>
+  <g class="float">
+    <use href="#pix-hair"/><use href="#pix-head"/><use href="#pix-hoodie"/>
+  </g>
+</g>
+<text x="150" y="305" text-anchor="middle" class="mono" font-size="10" letter-spacing="4" fill="#C084FC">· PIXEL ANAND ·</text>
+
+<!-- Text column -->
+<g transform="translate(290,0)">
+  <text x="0" y="94" class="sans" font-size="24" font-weight="900" fill="#F8FAFC">Shipping AI products you can actually trust.</text>
+
+  <text x="0" y="128" class="sans" font-size="13" fill="#C084FC">B.Tech CSE at ADGIPS (GGSIPU). I design and deploy end-to-end</text>
+  <text x="0" y="146" class="sans" font-size="13" fill="#C084FC">AI systems — RAG pipelines, multi-LLM orchestration, hardened</text>
+  <text x="0" y="164" class="sans" font-size="13" fill="#C084FC">FastAPI / Flask backends with per-session isolation, rate</text>
+  <text x="0" y="182" class="sans" font-size="13" fill="#C084FC">limiting, and quote-verified answers against the source.</text>
+
+  <!-- 4 badge pills on 2x2 grid -->
+  <g transform="translate(0,206)" class="mono" font-size="11">
+    <g>
+      <rect width="320" height="30" rx="8" fill="#140824" stroke="#4C1D95"/>
+      <circle cx="18" cy="15" r="4" fill="#E13838" class="pulse"/>
+      <text x="30" y="19" fill="#F8FAFC">CORE  <tspan fill="#7C3AED">· software · applied AI · full-stack</tspan></text>
+    </g>
+    <g transform="translate(330,0)">
+      <rect width="320" height="30" rx="8" fill="#140824" stroke="#4C1D95"/>
+      <circle cx="18" cy="15" r="4" fill="#A855F7"/>
+      <text x="30" y="19" fill="#F8FAFC">DNA   <tspan fill="#7C3AED">· reliability · prompts · guardrails</tspan></text>
+    </g>
+    <g transform="translate(0,42)">
+      <rect width="320" height="30" rx="8" fill="#140824" stroke="#4C1D95"/>
+      <circle cx="18" cy="15" r="4" fill="#E13838"/>
+      <text x="30" y="19" fill="#F8FAFC">OPEN  <tspan fill="#7C3AED">· SDE · AI / ML internships · OSS</tspan></text>
+    </g>
+    <g transform="translate(330,42)">
+      <rect width="320" height="30" rx="8" fill="#140824" stroke="#4C1D95"/>
+      <circle cx="18" cy="15" r="4" fill="#C084FC"/>
+      <text x="30" y="19" fill="#F8FAFC">BASE  <tspan fill="#7C3AED">· Delhi, India · 2024 – 2028</tspan></text>
+    </g>
+  </g>
+</g>
 </svg>

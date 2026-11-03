@@ -1,19 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="70" viewBox="0 0 1000 70" role="img" aria-label="Commit Snake">
-  <defs>
-    <linearGradient id="bg" x1="0" x2="1">
-      <stop offset="0" stop-color="#0A0806"/><stop offset=".5" stop-color="#1a0a08"/><stop offset="1" stop-color="#0A0806"/>
-    </linearGradient>
-    <linearGradient id="line" x1="0" x2="1">
-      <stop offset="0" stop-color="#DC2626" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#DC2626"/>
-      <stop offset="1" stop-color="#F5E6C8" stop-opacity="0"/>
-    </linearGradient>
-  </defs>
-  <rect width="1000" height="70" rx="10" fill="url(#bg)"/>
-  <line x1="0" y1="34" x2="400" y2="34" stroke="url(#line)" stroke-width="1"/>
-  <line x1="600" y1="34" x2="1000" y2="34" stroke="url(#line)" stroke-width="1"/>
-  <g transform="translate(500,20)">
-    <text x="0" y="22" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" letter-spacing="4" fill="#8a7849">[ 05 ]</text>
-    <text x="0" y="46" text-anchor="middle" font-family="-apple-system, Segoe UI, Helvetica, sans-serif" font-size="22" font-weight="800" letter-spacing="8" fill="#F5E6C8">COMMIT SNAKE</text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="80" viewBox="0 0 1000 80" role="img" aria-label="Commit Snake">
+<style>
+  .mono { font-family: ui-monospace, Menlo, Consolas, monospace; }
+  .sans { font-family: -apple-system, 'Segoe UI', Helvetica, sans-serif; }
+  .pulse { animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { opacity:.5; } 50% { opacity:1; } }
+  @media (prefers-reduced-motion: reduce) { * { animation:none !important; } }
+</style>
+<defs>
+  <linearGradient id="hbg" x1="0" x2="1">
+    <stop offset="0" stop-color="#050308"/><stop offset=".5" stop-color="#1a0a2e"/><stop offset="1" stop-color="#050308"/>
+  </linearGradient>
+  <linearGradient id="moving" x1="0" x2="1">
+    <stop offset="0" stop-color="#A855F7" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#A855F7"/>
+    <stop offset="1" stop-color="#A855F7" stop-opacity="0"/>
+    <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0" dur="4s" repeatCount="indefinite"/>
+  </linearGradient>
+  <linearGradient id="moving2" x1="0" x2="1">
+    <stop offset="0" stop-color="#E13838" stop-opacity="0"/>
+    <stop offset=".5" stop-color="#E13838"/>
+    <stop offset="1" stop-color="#E13838" stop-opacity="0"/>
+    <animateTransform attributeName="gradientTransform" type="translate" values="1 0;-1 0" dur="4s" repeatCount="indefinite"/>
+  </linearGradient>
+</defs>
+<rect width="1000" height="80" rx="12" fill="url(#hbg)" stroke="#4C1D95"/>
+<line x1="40" y1="40" x2="380" y2="40" stroke="#4C1D95" stroke-opacity=".4" stroke-width="1"/>
+<line x1="620" y1="40" x2="960" y2="40" stroke="#4C1D95" stroke-opacity=".4" stroke-width="1"/>
+<rect x="40"  y="38" width="340" height="4" fill="url(#moving)"/>
+<rect x="620" y="38" width="340" height="4" fill="url(#moving2)"/>
+<g transform="translate(500,24)" text-anchor="middle">
+  <text y="0"  class="mono" font-size="10" letter-spacing="4" fill="#C084FC">[ 06 ]</text>
+  <text y="24" class="sans" font-size="22" font-weight="900" letter-spacing="6" fill="#F8FAFC">COMMIT SNAKE</text>
+  <text y="44" class="mono" font-size="9"  letter-spacing="4" fill="#7C3AED">a year of commits eaten up</text>
+</g>
+<circle cx="30"  cy="40" r="4" fill="#E13838" class="pulse"/>
+<circle cx="970" cy="40" r="4" fill="#A855F7" class="pulse"/>
 </svg>
