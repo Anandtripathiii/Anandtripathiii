@@ -145,7 +145,7 @@
 
 <br/>
 
-<img src="./metrics/contribution-city.svg" width="100%" alt="Contribution City — live-generated from my GitHub data daily"/>
+<img src="./metrics/contribution-city.svg?v=2" width="100%" alt="Contribution City — live-generated from my GitHub data daily"/>
 
 <br/><br/>
 
