@@ -95,42 +95,47 @@ def compute_stats(days):
         "current": today_streak,
         "best_day_date": best_day_date,
         "best_day_count": best_day_count,
-        "weeks": _bucket_by_week(days),
+        "grid": _bucket_by_day(days),
     }
 
 
-def _bucket_by_week(days):
-    """Group days into 52 weeks. Returns list of (max_count, total_count) per week."""
-    weeks = []
+def _bucket_by_day(days):
+    """Return the last 52 weeks as a 2D grid: list of 52 columns, each 7 ints (counts).
+    Column 0 is oldest week, column -1 is newest. Row 0 is first day of that chunk."""
+    cols = []
     for i in range(0, len(days), 7):
         chunk = days[i:i+7]
         if not chunk:
             continue
-        total = sum(d["count"] for d in chunk)
-        mx = max(d["count"] for d in chunk)
-        weeks.append({"total": total, "max": mx})
-    return weeks[-52:]  # last 52 weeks
+        counts = [d["count"] for d in chunk]
+        while len(counts) < 7:
+            counts.append(0)
+        cols.append(counts)
+    return cols[-52:]
 
 
 # ---------- SVG ----------
 
-# Theme: purple/red/black
-BG0 = "#050308"
-BG1 = "#1a0a2e"
-BRD = "#4C1D95"
-TXT = "#F8FAFC"
-MUTED = "#C084FC"
-DIM = "#7C3AED"
-RED = "#E13838"
-PURPLE = "#A855F7"
-CREAM = "#F5E6C8"
+# Theme: teal/cyan → hot pink on deep navy
+BG0 = "#060819"
+BG1 = "#0F1829"
+BRD = "#164E63"
+TXT = "#F0FDFA"
+MUTED = "#67E8F9"
+DIM = "#0E7490"
+RED = "#EC4899"      # accent (hot pink)
+PURPLE = "#06B6D4"   # dominant (cyan)
+CREAM = "#F0FDFA"
 
-# Colour ramp for buildings (dark → bright by activity)
-RAMP = ["#1a0a2e", "#4C1D95", "#7C3AED", "#A855F7", "#C084FC", "#E13838"]
+# Colour ramp for buildings (dark → bright by activity, peaking in hot pink)
+RAMP = ["#0F1829", "#164E63", "#0E7490", "#06B6D4", "#22D3EE", "#EC4899"]
 
 
-CUBE = 7  # base size of each cube in iso units
-HMAX_PX = 90  # max building height in screen pixels
+CUBE = 6     # footprint of each building in iso world units
+CELL = 9     # grid spacing in world units (CELL-CUBE = street width)
+HMAX_PX = 65 # max building height in screen pixels
+ROWS = 7     # days per week
+COLS = 52    # weeks shown
 
 
 def iso_project(x, y, z):
@@ -176,8 +181,8 @@ def pick_colors(count, max_count):
 
 
 def render_svg(stats, username):
-    weeks = stats["weeks"]
-    max_week = max((w["max"] for w in weeks), default=1) or 1
+    grid = stats["grid"]
+    max_day = max((c for col in grid for c in col), default=1) or 1
 
     # layout
     W, H = 1000, 440
@@ -193,7 +198,7 @@ def render_svg(stats, username):
     svg.append('<defs>')
     svg.append(f'<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{BG1}"/><stop offset="1" stop-color="{BG0}"/></linearGradient>')
     svg.append(f'<linearGradient id="brd" x1="0" x2="1"><stop offset="0" stop-color="{PURPLE}"/><stop offset=".5" stop-color="{RED}"/><stop offset="1" stop-color="{PURPLE}"/></linearGradient>')
-    svg.append('<pattern id="grid" width="20" height="12" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 12" fill="none" stroke="#4C1D95" stroke-opacity=".18" stroke-width="1"/></pattern>')
+    svg.append(f'<pattern id="grid" width="20" height="12" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 12" fill="none" stroke="{BRD}" stroke-opacity=".18" stroke-width="1"/></pattern>')
     svg.append('</defs>')
 
     # Frame
@@ -225,28 +230,50 @@ def render_svg(stats, username):
         svg.append(f'<line x1="640" y1="{y+8}" x2="960" y2="{y+8}" stroke="{BRD}" stroke-opacity=".4"/>')
         y += 32
 
-    # Left side: isometric city, 52 weeks as a straight row of buildings
-    # Place origin where oldest week lands (left side of panel, near bottom)
-    gx0, gy0 = 110, 390
+    # Left side: isometric city — 7 (days) × 52 (weeks) of buildings on a grid plate.
+    gx0, gy0 = 160, 395
     svg.append(f'<g transform="translate({gx0},{gy0})">')
 
-    # Ground "shadow" baseline across whole row
-    first_x = 0
-    last_x = (len(weeks) - 1) * 10 + CUBE
-    svg.append(f'<line x1="{iso_project(first_x,0,0)[0]:.1f}" y1="{iso_project(first_x,0,0)[1]+2:.1f}" '
-               f'x2="{iso_project(last_x,0,0)[0]:.1f}" y2="{iso_project(last_x,0,0)[1]+2:.1f}" '
-               f'stroke="{BRD}" stroke-opacity=".3" stroke-width="1"/>')
+    cols = len(grid)
+    rows = ROWS
 
-    # Draw buildings oldest → newest, LEFT to RIGHT
-    for i, w in enumerate(weeks):
-        mx = w["max"]
-        if max_week > 0:
-            height = max(3, int((mx / max_week) * HMAX_PX))
-        else:
-            height = 3
-        main, side, top = pick_colors(mx, max_week)
-        wx = i * 10.0
-        svg.append(building_svg(wx, 0, height, main, side, top))
+    # Ground plate: an iso diamond covering the whole grid, with a faint grid-line fill.
+    gx_min, gx_max = 0, cols * CELL
+    gy_min, gy_max = 0, rows * CELL
+    P1 = iso_project(gx_min, gy_min, 0)
+    P2 = iso_project(gx_max, gy_min, 0)
+    P3 = iso_project(gx_max, gy_max, 0)
+    P4 = iso_project(gx_min, gy_max, 0)
+    svg.append(
+        f'<polygon points="{P1[0]:.1f},{P1[1]:.1f} {P2[0]:.1f},{P2[1]:.1f} '
+        f'{P3[0]:.1f},{P3[1]:.1f} {P4[0]:.1f},{P4[1]:.1f}" '
+        f'fill="{BG0}" stroke="{BRD}" stroke-opacity=".5" stroke-width="1"/>'
+    )
+    # Grid lines along both axes on the plate
+    for i in range(cols + 1):
+        a = iso_project(i * CELL, gy_min, 0)
+        b = iso_project(i * CELL, gy_max, 0)
+        svg.append(f'<line x1="{a[0]:.1f}" y1="{a[1]:.1f}" x2="{b[0]:.1f}" y2="{b[1]:.1f}" '
+                   f'stroke="{BRD}" stroke-opacity=".22" stroke-width=".5"/>')
+    for j in range(rows + 1):
+        a = iso_project(gx_min, j * CELL, 0)
+        b = iso_project(gx_max, j * CELL, 0)
+        svg.append(f'<line x1="{a[0]:.1f}" y1="{a[1]:.1f}" x2="{b[0]:.1f}" y2="{b[1]:.1f}" '
+                   f'stroke="{BRD}" stroke-opacity=".22" stroke-width=".5"/>')
+
+    # Draw buildings back-to-front (painter's algorithm):
+    # higher (col + row) is further back on screen, so draw those first.
+    cells = [(i, j) for i in range(cols) for j in range(rows)]
+    cells.sort(key=lambda c: -(c[0] + c[1]))
+    for i, j in cells:
+        count = grid[i][j]
+        if count <= 0:
+            continue
+        height = max(3, int((count / max_day) * HMAX_PX))
+        main, side, top = pick_colors(count, max_day)
+        wx = i * CELL + (CELL - CUBE) / 2.0
+        wy = j * CELL + (CELL - CUBE) / 2.0
+        svg.append(building_svg(wx, wy, height, main, side, top))
     svg.append('</g>')
 
     # X-axis label (year range)
