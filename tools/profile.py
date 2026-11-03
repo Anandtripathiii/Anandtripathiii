@@ -131,9 +131,9 @@ CREAM = "#F5E6C8"
 RAMP = ["#1a0a2e", "#4C1D95", "#7C3AED", "#A855F7", "#C084FC", "#E13838"]
 
 
-CUBE = 7     # footprint of each building in iso world units (bigger = more visible)
-CELL = 10    # grid spacing in world units (CELL-CUBE = street width)
-HMAX_PX = 70 # max building height in screen pixels
+CUBE = 8     # footprint of each building in iso world units (bigger = more visible)
+CELL = 10    # grid spacing in world units (narrow streets, chunky blocks)
+HMAX_PX = 72 # max building height in screen pixels
 ROWS = 7     # days per week
 COLS = 52    # weeks shown
 
@@ -269,7 +269,7 @@ def render_svg(stats, username):
         count = grid[i][j]
         if count <= 0:
             continue
-        height = max(3, int((count / max_day) * HMAX_PX))
+        height = max(7, int((count / max_day) * HMAX_PX))
         main, side, top = pick_colors(count, max_day)
         wx = i * CELL + (CELL - CUBE) / 2.0
         wy = j * CELL + (CELL - CUBE) / 2.0
