@@ -145,6 +145,10 @@
 
 <br/>
 
+<img src="./metrics/contribution-city.svg" width="100%" alt="Contribution City — live-generated from my GitHub data daily"/>
+
+<br/><br/>
+
 <a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com/?user=Anandtripathiii&hide_border=true&background=050308&stroke=A855F7&ring=E13838&fire=E13838&currStreakLabel=F8FAFC&sideLabels=C084FC&dates=7C3AED&currStreakNum=F8FAFC&sideNums=F8FAFC" alt="Streak stats"/></a>
 
 <br/><br/>

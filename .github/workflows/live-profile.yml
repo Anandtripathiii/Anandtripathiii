@@ -1,0 +1,45 @@
+name: Refresh live profile
+
+on:
+  schedule:
+    - cron: "30 18 * * *"  # 00:00 IST daily
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - tools/profile.py
+      - .github/workflows/live-profile.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: live-profile
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate contribution city SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/profile.py ${{ github.repository_owner }}
+
+      - name: Commit if changed
+        run: |
+          git add metrics
+          if git diff --cached --quiet; then
+            echo "Nothing changed"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh live profile"
+          git push
