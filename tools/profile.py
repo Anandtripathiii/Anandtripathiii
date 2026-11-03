@@ -116,24 +116,24 @@ def _bucket_by_day(days):
 
 # ---------- SVG ----------
 
-# Theme: teal/cyan → hot pink on deep navy
-BG0 = "#060819"
-BG1 = "#0F1829"
-BRD = "#164E63"
-TXT = "#F0FDFA"
-MUTED = "#67E8F9"
-DIM = "#0E7490"
-RED = "#EC4899"      # accent (hot pink)
-PURPLE = "#06B6D4"   # dominant (cyan)
-CREAM = "#F0FDFA"
+# Theme: purple/red/black — matches the rest of the README
+BG0 = "#050308"
+BG1 = "#1a0a2e"
+BRD = "#4C1D95"
+TXT = "#F8FAFC"
+MUTED = "#C084FC"
+DIM = "#7C3AED"
+RED = "#E13838"      # accent (hot red)
+PURPLE = "#A855F7"   # dominant (purple)
+CREAM = "#F5E6C8"
 
-# Colour ramp for buildings (dark → bright by activity, peaking in hot pink)
-RAMP = ["#0F1829", "#164E63", "#0E7490", "#06B6D4", "#22D3EE", "#EC4899"]
+# Colour ramp for buildings (dark → bright by activity, peaking in red)
+RAMP = ["#1a0a2e", "#4C1D95", "#7C3AED", "#A855F7", "#C084FC", "#E13838"]
 
 
-CUBE = 6     # footprint of each building in iso world units
-CELL = 9     # grid spacing in world units (CELL-CUBE = street width)
-HMAX_PX = 65 # max building height in screen pixels
+CUBE = 7     # footprint of each building in iso world units (bigger = more visible)
+CELL = 10    # grid spacing in world units (CELL-CUBE = street width)
+HMAX_PX = 70 # max building height in screen pixels
 ROWS = 7     # days per week
 COLS = 52    # weeks shown
 
@@ -231,7 +231,7 @@ def render_svg(stats, username):
         y += 32
 
     # Left side: isometric city — 7 (days) × 52 (weeks) of buildings on a grid plate.
-    gx0, gy0 = 160, 395
+    gx0, gy0 = 160, 415
     svg.append(f'<g transform="translate({gx0},{gy0})">')
 
     cols = len(grid)
