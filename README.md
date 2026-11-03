@@ -29,18 +29,18 @@
 
 <br/>
 
-<a href="https://github.com/Anandtripathiii/Docmind-AI"><img src="./assets/project-docmind.svg" width="49%" alt="DocMind AI — document Q&amp;A with quote verification"/></a>
-<a href="https://github.com/Anandtripathiii/CodePilot-AI"><img src="./assets/project-codepilot.svg" width="49%" alt="CodePilot AI — dual-LLM coding assistant with RAG"/></a>
+<a href="https://github.com/Anandtripathiii/Docmind-AI"><img src="./assets/project-docmind.svg" width="49%" alt="DocMind AI"/></a>
+<a href="https://github.com/Anandtripathiii/CodePilot-AI"><img src="./assets/project-codepilot.svg" width="49%" alt="CodePilot AI"/></a>
 
-<a href="https://github.com/Anandtripathiii/NovaChart-SupportAI"><img src="./assets/project-novachart.svg" width="49%" alt="NovaChart SupportAI — 5-stage prompt pipeline"/></a>
-<a href="https://github.com/Anandtripathiii/Export-Automation"><img src="./assets/project-export.svg" width="49%" alt="Export-Automation — scrape, verify, outreach pipeline"/></a>
+<a href="https://github.com/Anandtripathiii/NovaChart-SupportAI"><img src="./assets/project-novachart.svg" width="49%" alt="NovaChart SupportAI"/></a>
+<a href="https://github.com/Anandtripathiii/Export-Automation"><img src="./assets/project-export.svg" width="49%" alt="Export-Automation"/></a>
 
-<a href="https://fleetflow-8x7h.onrender.com"><img src="./assets/project-fleetflow.svg" width="49%" alt="FleetFlow — IGNITE Round 2 web product on Render"/></a>
-<a href="https://safher-ai.vercel.app"><img src="./assets/project-safeher.svg" width="49%" alt="SafeHer AI — women's safety web app with Malenia assistant"/></a>
+<a href="https://fleetflow-8x7h.onrender.com"><img src="./assets/project-fleetflow.svg" width="49%" alt="FleetFlow"/></a>
+<a href="https://safher-ai.vercel.app"><img src="./assets/project-safeher.svg" width="49%" alt="SafeHer AI"/></a>
 
 <br/><br/>
 
-<a href="https://github.com/Anandtripathiii/chargeevsetu"><img src="./assets/project-chargeevsetu.svg" width="100%" alt="ChargeEVSetu — India EV charging map, featured Techfest IIT Bombay project"/></a>
+<a href="https://github.com/Anandtripathiii/chargeevsetu"><img src="./assets/project-chargeevsetu.svg" width="100%" alt="ChargeEVSetu — featured Techfest IIT Bombay project"/></a>
 
 <br/><br/>
 
@@ -48,39 +48,45 @@
 
 <br/>
 
-**Languages & Core**
+### Languages
 
-<img src="https://skillicons.dev/icons?i=py,js,cpp,c,html,css,mysql&perline=12&theme=dark" alt="Python, JavaScript, C++, C, HTML, CSS, MySQL"/>
+<img src="https://skillicons.dev/icons?i=py,js,mysql,html,css,c,cpp&perline=12&theme=dark" alt="Python, JavaScript, SQL, HTML5, CSS3, C, C++"/>
 
-**Backend & Databases**
+### AI & GenAI
 
-<img src="https://skillicons.dev/icons?i=fastapi,flask,express,nodejs,mongodb,postgres,supabase&perline=12&theme=dark" alt="FastAPI, Flask, Express, Node.js, MongoDB, PostgreSQL, Supabase"/>
+<img src="https://img.shields.io/badge/OpenAI%20API-C084FC?style=for-the-badge&logo=openai&logoColor=050308&labelColor=050308" alt="OpenAI API"/>
+<img src="https://img.shields.io/badge/Claude%20API-E13838?style=for-the-badge&logo=anthropic&logoColor=F8FAFC&labelColor=050308" alt="Claude API"/>
+<img src="https://img.shields.io/badge/RAG-A855F7?style=for-the-badge&logoColor=F8FAFC&labelColor=050308" alt="RAG"/>
+<img src="https://img.shields.io/badge/Vector%20Embeddings-7C3AED?style=for-the-badge&logoColor=F8FAFC&labelColor=050308" alt="Vector Embeddings"/>
+<img src="https://img.shields.io/badge/Prompt%20Engineering-E13838?style=for-the-badge&logoColor=F8FAFC&labelColor=050308" alt="Prompt Engineering"/>
+<img src="https://img.shields.io/badge/LLM%20Integration-C084FC?style=for-the-badge&logoColor=050308&labelColor=050308" alt="LLM Integration"/>
+
+### Backend
+
+<img src="https://skillicons.dev/icons?i=fastapi,flask&perline=12&theme=dark" alt="FastAPI, Flask"/>
 <br/>
-<img src="https://img.shields.io/badge/Streamlit-E13838?style=for-the-badge&logo=streamlit&logoColor=F8FAFC&labelColor=050308" alt="Streamlit"/>
-<img src="https://img.shields.io/badge/FAISS-A855F7?style=for-the-badge&logo=meta&logoColor=F8FAFC&labelColor=050308" alt="FAISS"/>
-<img src="https://img.shields.io/badge/ChromaDB-C084FC?style=for-the-badge&logoColor=050308&labelColor=050308" alt="ChromaDB"/>
+<img src="https://img.shields.io/badge/REST%20APIs-A855F7?style=for-the-badge&logoColor=F8FAFC&labelColor=050308" alt="REST APIs"/>
 <img src="https://img.shields.io/badge/Gunicorn-7C3AED?style=for-the-badge&logo=gunicorn&logoColor=F8FAFC&labelColor=050308" alt="Gunicorn"/>
+<img src="https://img.shields.io/badge/Streamlit-E13838?style=for-the-badge&logo=streamlit&logoColor=F8FAFC&labelColor=050308" alt="Streamlit"/>
 
-**Frontend**
+### Automation & Data
 
-<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,vite&perline=12&theme=dark" alt="React, Next.js, Tailwind, Vite"/>
-
-**AI / ML / LLM**
-
-<img src="https://img.shields.io/badge/Google%20Gemini-E13838?style=for-the-badge&logo=googlegemini&logoColor=F8FAFC&labelColor=050308" alt="Google Gemini"/>
-<img src="https://img.shields.io/badge/OpenAI-C084FC?style=for-the-badge&logo=openai&logoColor=050308&labelColor=050308" alt="OpenAI"/>
-<img src="https://img.shields.io/badge/LangChain-7C3AED?style=for-the-badge&logo=langchain&logoColor=F8FAFC&labelColor=050308" alt="LangChain"/>
-<img src="https://img.shields.io/badge/Hugging%20Face-E13838?style=for-the-badge&logo=huggingface&logoColor=F8FAFC&labelColor=050308" alt="Hugging Face"/>
-<img src="https://img.shields.io/badge/Ollama-A855F7?style=for-the-badge&logo=ollama&logoColor=F8FAFC&labelColor=050308" alt="Ollama"/>
-<img src="https://img.shields.io/badge/NumPy-C084FC?style=for-the-badge&logo=numpy&logoColor=050308&labelColor=050308" alt="NumPy"/>
+<img src="https://skillicons.dev/icons?i=mongodb,postgres&perline=12&theme=dark" alt="MongoDB, PostgreSQL"/>
+<br/>
+<img src="https://img.shields.io/badge/Web%20Scraping-A855F7?style=for-the-badge&logoColor=F8FAFC&labelColor=050308" alt="Web Scraping"/>
+<img src="https://img.shields.io/badge/Playwright-E13838?style=for-the-badge&logo=playwright&logoColor=F8FAFC&labelColor=050308" alt="Playwright"/>
+<img src="https://img.shields.io/badge/API%20Integration-C084FC?style=for-the-badge&logoColor=050308&labelColor=050308" alt="API Integration"/>
+<img src="https://img.shields.io/badge/n8n-7C3AED?style=for-the-badge&logo=n8n&logoColor=F8FAFC&labelColor=050308" alt="n8n"/>
+<br/>
+<img src="https://img.shields.io/badge/MySQL-E13838?style=for-the-badge&logo=mysql&logoColor=F8FAFC&labelColor=050308" alt="MySQL"/>
+<img src="https://img.shields.io/badge/ChromaDB-C084FC?style=for-the-badge&logoColor=050308&labelColor=050308" alt="ChromaDB"/>
+<img src="https://img.shields.io/badge/NumPy-A855F7?style=for-the-badge&logo=numpy&logoColor=F8FAFC&labelColor=050308" alt="NumPy"/>
 <img src="https://img.shields.io/badge/Pandas-7C3AED?style=for-the-badge&logo=pandas&logoColor=F8FAFC&labelColor=050308" alt="Pandas"/>
 
-**Automation & DevOps**
+### Tools & Infrastructure
 
-<img src="https://skillicons.dev/icons?i=docker,git,github,linux,vscode,vercel,postman,azure,npm&perline=12&theme=dark" alt="Docker, Git, GitHub, Linux, VS Code, Vercel, Postman, Azure, npm"/>
+<img src="https://skillicons.dev/icons?i=docker,git,github,supabase,linux,vscode,vercel&perline=12&theme=dark" alt="Docker, Git, GitHub, Supabase, Linux, VS Code, Vercel"/>
 <br/>
-<img src="https://img.shields.io/badge/Playwright-E13838?style=for-the-badge&logo=playwright&logoColor=F8FAFC&labelColor=050308" alt="Playwright"/>
-<img src="https://img.shields.io/badge/n8n-A855F7?style=for-the-badge&logo=n8n&logoColor=F8FAFC&labelColor=050308" alt="n8n"/>
 <img src="https://img.shields.io/badge/Render-C084FC?style=for-the-badge&logo=render&logoColor=050308&labelColor=050308" alt="Render"/>
 
 <br/><br/>
@@ -89,24 +95,24 @@
 
 <br/>
 
-<a href="https://github.com/Anandtripathiii"><img height="180em" src="https://github-readme-stats.vercel.app/api?username=Anandtripathiii&show_icons=true&hide_border=true&bg_color=050308&title_color=A855F7&icon_color=E13838&text_color=C084FC&include_all_commits=true&count_private=true" alt="GitHub stats"/></a>
+<a href="https://github.com/Anandtripathiii"><img height="180em" src="https://github-readme-stats.hackclub.dev/api?username=Anandtripathiii&show_icons=true&hide_border=true&bg_color=050308&title_color=A855F7&icon_color=E13838&text_color=C084FC&include_all_commits=true" alt="GitHub stats"/></a>
 <a href="https://git.io/streak-stats"><img height="180em" src="https://streak-stats.demolab.com/?user=Anandtripathiii&hide_border=true&background=050308&stroke=A855F7&ring=E13838&fire=E13838&currStreakLabel=F8FAFC&sideLabels=C084FC&dates=7C3AED&currStreakNum=F8FAFC&sideNums=F8FAFC" alt="Streak stats"/></a>
 
 <br/>
 
-<a href="https://github.com/Anandtripathiii"><img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anandtripathiii&layout=compact&hide_border=true&bg_color=050308&title_color=A855F7&text_color=C084FC&langs_count=10" alt="Top languages"/></a>
+<a href="https://github.com/Anandtripathiii"><img height="180em" src="https://github-readme-stats.hackclub.dev/api/top-langs/?username=Anandtripathiii&layout=compact&hide_border=true&bg_color=050308&title_color=A855F7&text_color=C084FC&langs_count=10" alt="Top languages"/></a>
 
 <br/><br/>
 
-<b>CONTRIBUTION GRAPH</b>
+**CONTRIBUTION GRAPH**
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Anandtripathiii&bg_color=050308&color=F8FAFC&line=A855F7&point=E13838&area=true&area_color=4C1D95&hide_border=true" alt="Contribution graph — last year of commits"/>
+<img width="100%" src="https://github-readme-activity-graph.laravel.cloud/graph?username=Anandtripathiii&bg_color=050308&color=F8FAFC&line=A855F7&point=E13838&area=true&area_color=4C1D95&hide_border=true&theme=react-dark" alt="Contribution graph — last year of commits"/>
 
 <br/><br/>
 
-<b>TROPHIES</b>
+**TROPHIES**
 
-<img src="https://github-profile-trophy.vercel.app/?username=Anandtripathiii&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10" alt="Trophies"/>
+<img src="https://github-profile-trophy.vercel.app/?username=Anandtripathiii&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10&rank=SECRET,SSS,SS,S,AAA,AA,A,B" alt="Trophies"/>
 
 <br/><br/>
 
@@ -126,7 +132,7 @@
 
 <div align="center">
 
-### <picture><img width="12" height="20" src="https://img.shields.io/badge/-E13838?style=flat-square"/></picture>&nbsp; EXPERIENCE
+### <img width="12" height="20" src="https://img.shields.io/badge/-E13838?style=flat-square"/>&nbsp; EXPERIENCE
 
 </div>
 
@@ -150,7 +156,7 @@ Maintained and debugged a full-stack e-learning platform used by students for vi
 
 <div align="center">
 
-### <picture><img width="12" height="20" src="https://img.shields.io/badge/-E13838?style=flat-square"/></picture>&nbsp; ACHIEVEMENTS
+### <img width="12" height="20" src="https://img.shields.io/badge/-E13838?style=flat-square"/>&nbsp; ACHIEVEMENTS
 
 | | Recognition | What |
 | :---: | :--- | :--- |
@@ -165,7 +171,7 @@ Maintained and debugged a full-stack e-learning platform used by students for vi
 
 <div align="center">
 
-### <picture><img width="12" height="20" src="https://img.shields.io/badge/-E13838?style=flat-square"/></picture>&nbsp; CODING PROFILES
+### <img width="12" height="20" src="https://img.shields.io/badge/-E13838?style=flat-square"/>&nbsp; CODING PROFILES
 
 <a href="https://leetcode.com/u/anandtripathiii/"><img src="https://img.shields.io/badge/LeetCode-E13838?style=for-the-badge&logo=leetcode&logoColor=F8FAFC&labelColor=050308" height="46" alt="LeetCode"/></a>&nbsp;
 <a href="https://www.geeksforgeeks.org/user/anandtripathiii/"><img src="https://img.shields.io/badge/GeeksforGeeks-A855F7?style=for-the-badge&logo=geeksforgeeks&logoColor=F8FAFC&labelColor=050308" height="46" alt="GFG"/></a>&nbsp;
