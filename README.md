@@ -95,13 +95,7 @@
 
 <br/>
 
-<a href="https://git.io/streak-stats"><img height="180em" src="https://streak-stats.demolab.com/?user=Anandtripathiii&hide_border=true&background=050308&stroke=A855F7&ring=E13838&fire=E13838&currStreakLabel=F8FAFC&sideLabels=C084FC&dates=7C3AED&currStreakNum=F8FAFC&sideNums=F8FAFC" alt="Streak stats"/></a>
-
-<br/>
-
-<br/><br/>
-
-<br/><br/>
+<a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com/?user=Anandtripathiii&hide_border=true&background=050308&stroke=A855F7&ring=E13838&fire=E13838&currStreakLabel=F8FAFC&sideLabels=C084FC&dates=7C3AED&currStreakNum=F8FAFC&sideNums=F8FAFC" alt="Streak stats"/></a>
 
 <br/><br/>
 
@@ -183,4 +177,3 @@ Maintained and debugged a full-stack e-learning platform used by students for vi
 <img src="./assets/footer.svg" width="100%" alt="Thanks for stopping by — let's build something that matters"/>
 
 </div>
-
