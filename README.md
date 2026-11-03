@@ -95,24 +95,24 @@
 
 <br/>
 
-<a href="https://github.com/Anandtripathiii"><img height="180em" src="https://github-readme-stats.vercel.app/api?username=Anandtripathiii&show_icons=true&hide_border=true&bg_color=050308&title_color=A855F7&icon_color=E13838&text_color=C084FC&include_all_commits=true" alt="GitHub stats"/></a>
+<a href="https://github.com/Anandtripathiii"><img height="180em" src="https://github-readme-stats.vercel.app/api?v=2&username=Anandtripathiii&show_icons=true&hide_border=true&bg_color=050308&title_color=A855F7&icon_color=E13838&text_color=C084FC&include_all_commits=true" alt="GitHub stats"/></a>
 <a href="https://git.io/streak-stats"><img height="180em" src="https://streak-stats.demolab.com/?user=Anandtripathiii&hide_border=true&background=050308&stroke=A855F7&ring=E13838&fire=E13838&currStreakLabel=F8FAFC&sideLabels=C084FC&dates=7C3AED&currStreakNum=F8FAFC&sideNums=F8FAFC" alt="Streak stats"/></a>
 
 <br/>
 
-<a href="https://github.com/Anandtripathiii"><img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anandtripathiii&layout=compact&hide_border=true&bg_color=050308&title_color=A855F7&text_color=C084FC&langs_count=10" alt="Top languages"/></a>
+<a href="https://github.com/Anandtripathiii"><img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?v=2&username=Anandtripathiii&layout=compact&hide_border=true&bg_color=050308&title_color=A855F7&text_color=C084FC&langs_count=10" alt="Top languages"/></a>
 
 <br/><br/>
 
 **CONTRIBUTION GRAPH**
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Anandtripathiii&bg_color=050308&color=F8FAFC&line=A855F7&point=E13838&area=true&area_color=4C1D95&hide_border=true&theme=react-dark" alt="Contribution graph — last year of commits"/>
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?v=2&username=Anandtripathiii&bg_color=050308&color=F8FAFC&line=A855F7&point=E13838&area=true&area_color=4C1D95&hide_border=true&theme=react-dark" alt="Contribution graph — last year of commits"/>
 
 <br/><br/>
 
 **TROPHIES**
 
-<img src="https://github-profile-trophy.vercel.app/?username=Anandtripathiii&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10&rank=SECRET,SSS,SS,S,AAA,AA,A,B" alt="Trophies"/>
+<img src="https://github-profile-trophy.vercel.app/?v=2&username=Anandtripathiii&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=10&margin-h=10&rank=SECRET,SSS,SS,S,AAA,AA,A,B" alt="Trophies"/>
 
 <br/><br/>
 
