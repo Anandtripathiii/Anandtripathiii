@@ -40,9 +40,6 @@
 </tr>
 </table>
 
-<br/>
-
-<img src="./assets/moods-row.svg" width="100%" alt="Extra moods — 7 full-face pixel portraits with bob + sweep motion"/>
 
 <br/><br/>
 
