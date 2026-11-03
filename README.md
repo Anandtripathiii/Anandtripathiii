@@ -31,47 +31,18 @@
 
 <table align="center" border="0">
 <tr>
-<td align="center" valign="middle" width="40%">
+<td align="center" valign="middle" width="36%">
 <img src="./assets/avatar-cycle.svg" width="300" alt="Animated pixel avatar — cycling through eye expressions"/>
 </td>
-<td align="center" valign="middle" width="60%">
-
-### — EYE EXPRESSIONS —
-
-<table border="0">
-<tr>
-<td align="center"><img src="./assets/expr-03.png" width="80" alt="normal"/><br/><sub><b>NORMAL</b></sub></td>
-<td align="center"><img src="./assets/expr-04.png" width="80" alt="look left"/><br/><sub><b>LOOK LEFT</b></sub></td>
-<td align="center"><img src="./assets/expr-05.png" width="80" alt="look up"/><br/><sub><b>LOOK UP</b></sub></td>
-<td align="center"><img src="./assets/expr-06.png" width="80" alt="look right"/><br/><sub><b>LOOK RIGHT</b></sub></td>
-</tr>
-<tr>
-<td align="center"><img src="./assets/expr-01.png" width="80" alt="blink"/><br/><sub><b>BLINK</b></sub></td>
-<td align="center"><img src="./assets/expr-07.png" width="80" alt="wink"/><br/><sub><b>WINK</b></sub></td>
-<td align="center"><img src="./assets/expr-08.png" width="80" alt="wide eyes"/><br/><sub><b>WIDE EYES</b></sub></td>
-<td align="center"><img src="./assets/expr-02.png" width="80" alt="happy eyes"/><br/><sub><b>HAPPY</b></sub></td>
-</tr>
-</table>
-
+<td align="center" valign="middle" width="64%">
+<img src="./assets/expressions-grid.svg" width="100%" alt="Eye expressions — 8 pixel-art frames, each tile bobs and sweeps a highlight"/>
 </td>
 </tr>
 </table>
 
 <br/>
 
-### — EXTRA MOODS —
-
-<table align="center" border="0">
-<tr>
-<td align="center"><img src="./assets/expr-14.png" width="90" alt="smile"/><br/><sub><b>SMILE</b></sub></td>
-<td align="center"><img src="./assets/expr-12.png" width="90" alt="sad"/><br/><sub><b>SAD</b></sub></td>
-<td align="center"><img src="./assets/expr-09.png" width="90" alt="angry"/><br/><sub><b>ANGRY</b></sub></td>
-<td align="center"><img src="./assets/expr-15.png" width="90" alt="surprised"/><br/><sub><b>SURPRISED</b></sub></td>
-<td align="center"><img src="./assets/expr-13.png" width="90" alt="sleepy"/><br/><sub><b>SLEEPY</b></sub></td>
-<td align="center"><img src="./assets/expr-10.png" width="90" alt="cool"/><br/><sub><b>COOL</b></sub></td>
-<td align="center"><img src="./assets/expr-11.png" width="90" alt="focused"/><br/><sub><b>FOCUSED</b></sub></td>
-</tr>
-</table>
+<img src="./assets/moods-row.svg" width="100%" alt="Extra moods — 7 full-face pixel portraits with bob + sweep motion"/>
 
 <br/><br/>
 
@@ -145,7 +116,7 @@
 
 <br/>
 
-<img src="./metrics/contribution-city.svg?v=2" width="100%" alt="Contribution City — live-generated from my GitHub data daily"/>
+<img src="./metrics/contribution-city.svg" width="100%" alt="Contribution City — live-generated from my GitHub data daily"/>
 
 <br/><br/>
 
