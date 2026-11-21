@@ -30,7 +30,7 @@
 <text x="960" y="234" text-anchor="end" class="mono" font-size="14" font-weight="700" fill="#E13838">72 on Oct 22</text>
 <line x1="640" y1="242" x2="960" y2="242" stroke="#4C1D95" stroke-opacity=".4"/>
 <text x="640" y="266" class="mono" font-size="11" letter-spacing="3" fill="#7C3AED">ACTIVE DAYS</text>
-<text x="960" y="266" text-anchor="end" class="mono" font-size="14" font-weight="700" fill="#F5E6C8">32 of 370</text>
+<text x="960" y="266" text-anchor="end" class="mono" font-size="14" font-weight="700" fill="#F5E6C8">32 of 371</text>
 <line x1="640" y1="274" x2="960" y2="274" stroke="#4C1D95" stroke-opacity=".4"/>
 <g transform="translate(160,415)">
 <polygon points="0.0,0.0 450.3,-260.0 389.7,-295.0 -60.6,-35.0" fill="#050308" stroke="#4C1D95" stroke-opacity=".5" stroke-width="1"/>
